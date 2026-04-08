@@ -208,7 +208,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 </div>
 
 <div id="progress-bar"></div>
-<div id="slide-counter">SLIDE <span id="cur-num">1</span> / <span id="tot-num">25</span></div>
+<div id="slide-counter">SLIDE <span id="cur-num">1</span> / <span id="tot-num">26</span></div>
 
 <div id="lang-sw">
   <button class="lbtn active" data-lang="en" onclick="setLang('en')">EN</button>
@@ -665,12 +665,114 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
       <div class="card"><span class="card-icon">🏛️</span><div class="card-title" data-i18n="s25_c3">Learn Klang</div></div>
       <div class="card"><span class="card-icon">🏠</span><div class="card-title" data-i18n="s25_c4">Return Safely</div></div>
     </div>
-    <div class="big-success" style="margin-top:16px;">
+    <div class="big-success" style="margin-top:10px;">
       <div class="big-success-text" data-i18n="s25_rule">That Is A Successful Event.</div>
       <p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s25_sub">Good luck, stay safe, and enjoy the Klang Heritage Bingo Hunt! 🏆</p>
     </div>
+    <!-- ═══ EMERGENCY CONTACTS FOOTER — add/remove contact-card blocks to add more contacts ═══ -->
+    <div style="margin-top:14px;width:100%;max-width:760px;">
+      <div style="font-size:9.5px;letter-spacing:2.5px;color:var(--red);font-weight:700;text-transform:uppercase;margin-bottom:10px;">🆘 Emergency Contacts</div>
+      <div class="contact-row" style="flex-wrap:wrap;justify-content:center;gap:10px;">
+        <!-- CONTACT 1 — Bryan -->
+        <div class="contact-card" style="min-width:170px;flex:0 1 auto;">
+          <div class="contact-avatar">👨‍💼</div>
+          <div class="contact-role">Game Master</div>
+          <div class="contact-name">Bryan</div>
+          <a class="contact-num" href="tel:+60126611043" style="font-size:15px;">012 661 1043</a>
+          <div class="contact-badges"><span class="badge-call">📞 Call</span><span class="badge-wa">💬 WhatsApp</span></div>
+        </div>
+        <!-- CONTACT 2 — Sebastian -->
+        <div class="contact-card" style="min-width:170px;flex:0 1 auto;">
+          <div class="contact-avatar">🛡️</div>
+          <div class="contact-role">Safety Officer</div>
+          <div class="contact-name">Sebastian</div>
+          <a class="contact-num" href="tel:+60126365787" style="font-size:15px;">012-636 5787</a>
+          <div class="contact-badges"><span class="badge-call">📞 Call</span></div>
+        </div>
+        <!-- CONTACT 3 — Fire &amp; Rescue -->
+        <div class="contact-card" style="min-width:170px;flex:0 1 auto;border-color:rgba(251,146,60,.35);">
+          <div class="contact-avatar">🚒</div>
+          <div class="contact-role" style="color:var(--orange);">Emergency Services</div>
+          <div class="contact-name">Fire &amp; Rescue</div>
+          <a class="contact-num" href="tel:999" style="font-size:22px;color:var(--orange);">999</a>
+          <div class="contact-badges"><span class="badge-call" style="background:rgba(251,146,60,.15);border-color:rgba(251,146,60,.4);color:var(--orange);">📞 Emergency</span></div>
+        </div>
+        <!-- ══ TO ADD MORE CONTACTS: Copy one contact-card block above and paste here ══ -->
+      </div>
+    </div>
+    <!-- ═══ END EMERGENCY CONTACTS ═══ -->
   </div>
 </div>
+
+<!-- ═══ SLIDE 26 — GATHERING POINT ═══ -->
+<!-- TO ADD MORE SLIDES: Copy this entire slide block, change id="slide-26" to id="slide-27", update content, and remember to change total=26 to total=27 in the script below -->
+<div class="slide" id="slide-26">
+  <div class="slide-inner">
+    <div class="slide-label">Slide 26 — Logistics</div>
+    <h1 class="slide-title">📍 <span class="gold">Gathering</span> Point</h1>
+    <p class="slide-subtitle">Assembly area for flag-off — Right outside Wan Hai Office, around the corner</p>
+
+    <!-- PARKING PHOTO GRID -->
+    <!-- ══ TO ADD PHOTOS: Upload your images to GitHub repo (e.g. images/parking1.jpg) and replace the src="" below ══ -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:860px;margin-top:4px;">
+      <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+        <!-- Replace src="" with your image path e.g. src="images/gather1.jpg" -->
+        <img src="" alt="Gathering Point — Parking Entrance" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:none;"/>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
+          <span style="font-size:28px;">🅿️</span>
+          <span style="font-size:11px;letter-spacing:1px;">Parking Entrance</span>
+          <span style="font-size:9px;opacity:.5;">ime2 Cashless Parking</span>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+        <img src="" alt="Gathering Point — Parking Bay" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:none;"/>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
+          <span style="font-size:28px;">🚗</span>
+          <span style="font-size:11px;letter-spacing:1px;">Parking Bay</span>
+          <span style="font-size:9px;opacity:.5;">Yellow-marked bays</span>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+        <img src="" alt="Gathering Point — Assembly Area" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:none;"/>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
+          <span style="font-size:28px;">📍</span>
+          <span style="font-size:11px;letter-spacing:1px;">Assembly Area</span>
+          <span style="font-size:9px;opacity:.5;">Near Wan Hai Office</span>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+        <img src="" alt="Gathering Point — Flag Off Location" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:none;"/>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
+          <span style="font-size:28px;">🏁</span>
+          <span style="font-size:11px;letter-spacing:1px;">Flag-Off Point</span>
+          <span style="font-size:9px;opacity:.5;">Start &amp; Finish here</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGISTICS CARDS -->
+    <div class="card-grid card-grid-3" style="max-width:760px;margin-top:8px;">
+      <div class="card">
+        <span class="card-icon">🕗</span>
+        <div class="card-title">Arrival Time</div>
+        <div class="card-text">Please arrive <strong style="color:var(--gold);">15 minutes early</strong> before flag-off</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🅿️</span>
+        <div class="card-title">Parking</div>
+        <div class="card-text">Park at <strong style="color:var(--gold);">Times Parking</strong> — use ime2 app for cashless payment</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔄</span>
+        <div class="card-title">Return Here</div>
+        <div class="card-text">All teams return to this same point at end of hunt</div>
+      </div>
+    </div>
+
+    <div class="big-rule"><div class="big-rule-text">🏁 Flag Off From This Location</div></div>
+  </div>
+</div>
+<!-- ══ END SLIDE 26 ══ -->
 
 </div><!-- /slides-container -->
 <div id="nav-dots"></div>
@@ -923,7 +1025,7 @@ zh:{
   s2_c2t:'达成宾果线',s2_c2b:'完成一行、一列或对角线可获得额外奖励积分。',
   s2_c3t:'最高分获胜',s2_c3b:'结束时总积分最多的团队赢得冠军。',
   s2_rule:'⚠️ 安全 &gt; 速度 — 永远如此',s2_rule_sub:'规则#1：没有任何任务值得冒险受伤。',
-  s3_title:'<span class="gold">宾果</span>游戏规则',s3_sub:'点击任意格子标记完成 — 观察你的积分和连线增长',
+  s3_title:'<span class="gold">宾果</span>游戏规则',s3_sub:'点击任意格子标记完成 — 规察你的积分和连线增长',
   s3_score_hdr:'📊 实时积分板',s3_tasks_lbl:'✅ 已完成任务',s3_tpts_lbl:'🎯 任务积分',
   s3_lines_lbl:'⭐ 已达成连线',s3_bonus_lbl:'🎁 连线奖励',s3_full_lbl:'💎 满格奖励',
   s3_total_lbl:'总积分',s3_line_tracker:'已完成宾果线（每条100分）',
@@ -989,7 +1091,7 @@ zh:{
   s15_f_title:'❌ 失败的队伍',s15_f1:'随意乱跑',s15_f2:'没有内部沟通',s15_f3:'没有计划或策略',s15_f4:'把时间浪费在低分任务上',
   s15_rule:'🧠 策略比速度更能赢得比赛',
   s16_title:'🏛️ 尊重<span class="gold">文化遗产</span>景点',s16_sub:'这些是真实的历史地点。请像对待博物馆一样对待它们。',
-  s16_r1:'切勿<strong>攀爬</strong>纪念碑或遗产建筑 — 即使是为了拍照',
+  s16_r1:'切勿<strong>攀爬</strong>绪念碑或遗产建筑 — 即使是为了拍照',
   s16_r2:'切勿<strong>坐在</strong>或倚靠遗产建筑',
   s16_r3:'切勿<strong>触摸</strong>易碎物品或文物',
   s16_r4:'切勿<strong>损坏</strong>、涂写或破坏壁画和墙壁',
@@ -1177,7 +1279,7 @@ function resetBingo(){
 // ══════════════════════════════════════════════════════════════════
 //  SLIDE ENGINE
 // ══════════════════════════════════════════════════════════════════
-let current=0; const total=25; let isAnimating=false; let touchStartX=0;
+let current=0; const total=26; let isAnimating=false; let touchStartX=0;
 
 const dotsEl=document.getElementById('nav-dots');
 for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>goTo(i);dotsEl.appendChild(d);}
