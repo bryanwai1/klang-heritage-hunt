@@ -1348,5 +1348,7 @@ document.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-to
 
 buildBingo(); updateUI();
 </script>
+
+<div id="qr-widget" style="position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:9999;display:flex;align-items:center;gap:10px;background:rgba(20,20,20,0.88);border:1.5px solid rgba(212,175,55,0.5);border-radius:14px;padding:10px 16px;box-shadow:0 4px 24px rgba(0,0,0,0.5);backdrop-filter:blur(8px)"><img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=https://bryanwai1.github.io/klang-heritage-hunt/&bgcolor=141414&color=D4AF37&format=png" width="90" height="90" style="border-radius:8px;display:block" alt="QR Code"/><div style="color:#F5F0E8;font-family:Inter,sans-serif"><div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#D4AF37;text-transform:uppercase">Scan to View Slides</div><div style="font-size:10px;color:rgba(255,255,255,0.5);margin-top:3px">bryanwai1.github.io/klang-heritage-hunt</div></div></div>
 </body>
 </html>
