@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Klang Heritage Bingo Hunt â Briefing</title>
+<title>Klang Heritage Bingo Hunt — Briefing</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 :root{--gold:#D4AF37;--gold-light:#F0D060;--gold-dark:#A07D10;--maroon:#7B1F1F;--bg-dark:#0D0D1A;--bg-card:#14142A;--bg-panel:#1C1C35;--text-white:#F5F0E8;--text-muted:#9A9AB0;--teal:#2DD4BF;--orange:#FB923C;--red:#EF4444;--green:#22C55E;--blue:#60A5FA;}
@@ -62,7 +62,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .col-title{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:11px;display:flex;align-items:center;gap:7px;}
 .col-list{list-style:none;display:flex;flex-direction:column;gap:7px;}
 .col-list li{font-size:12.5px;color:var(--text-white);display:flex;align-items:flex-start;gap:7px;line-height:1.5;}
-.col-list li::before{content:'âº';color:var(--gold);font-size:13px;flex-shrink:0;}
+.col-list li::before{content:'›';color:var(--gold);font-size:13px;flex-shrink:0;}
 /* RULES */
 .big-rule{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.4);border-radius:13px;padding:16px 22px;text-align:center;max-width:640px;}
 .big-rule-text{font-family:'Cinzel',serif;font-size:16px;color:var(--red);font-weight:700;}
@@ -116,7 +116,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .badge-call{background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.4);color:var(--blue);padding:3px 10px;border-radius:20px;font-size:10.5px;font-weight:700;}
 .badge-wa{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.4);color:var(--green);padding:3px 10px;border-radius:20px;font-size:10.5px;font-weight:700;}
 
-/* ââââââ BINGO ââââââ */
+/* ══════ BINGO ══════ */
 #bingo-layout{display:flex;gap:18px;width:100%;max-width:960px;align-items:flex-start;}
 #bingo-header-row{display:grid;grid-template-columns:repeat(5,84px);gap:5px;margin-bottom:5px;}
 .bingo-col-header{text-align:center;font-family:'Cinzel',serif;font-size:18px;font-weight:900;color:var(--gold);text-shadow:0 0 16px rgba(212,175,55,.6);line-height:1;padding:3px 0;}
@@ -213,52 +213,52 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 <div id="lang-sw">
   <button class="lbtn active" data-lang="en" onclick="setLang('en')">EN</button>
   <button class="lbtn" data-lang="bm" onclick="setLang('bm')">BM</button>
-  <button class="lbtn" data-lang="zh" onclick="setLang('zh')">ä¸­æ</button>
+  <button class="lbtn" data-lang="zh" onclick="setLang('zh')">中文</button>
 </div>
 
-<div id="kb-hint">â â KEYS OR ARROWS</div>
-<button class="nav-arrow" id="prev-btn" onclick="changeSlide(-1)">â¹</button>
-<button class="nav-arrow" id="next-btn" onclick="changeSlide(1)">âº</button>
+<div id="kb-hint">← → KEYS OR ARROWS</div>
+<button class="nav-arrow" id="prev-btn" onclick="changeSlide(-1)">‹</button>
+<button class="nav-arrow" id="next-btn" onclick="changeSlide(1)">›</button>
 
 <div id="slides-container">
 
-<!-- âââ SLIDE 1 âââ -->
+<!-- ═══ SLIDE 1 ═══ -->
 <div class="slide active" id="slide-1">
   <div class="slide-inner" style="text-align:center;">
-    <span class="hero-icon">ðï¸</span>
+    <span class="hero-icon">🏛️</span>
     <div class="slide-label" data-i18n="s1_label">Safety &amp; Game Briefing</div>
     <h1 class="slide-title shimmer-text" data-i18n="s1_title">KLANG HERITAGE<br/>BINGO HUNT</h1>
     <div class="hero-ornament"></div>
-    <p class="hero-tagline" data-i18n="s1_tagline"><span class="hero-tag-word">Explore</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Learn</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Compete</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Return Safely</span></p>
+    <p class="hero-tagline" data-i18n="s1_tagline"><span class="hero-tag-word">Explore</span> &nbsp;•&nbsp; <span class="hero-tag-word">Learn</span> &nbsp;•&nbsp; <span class="hero-tag-word">Compete</span> &nbsp;•&nbsp; <span class="hero-tag-word">Return Safely</span></p>
     <div style="margin-top:20px;display:flex;gap:9px;flex-wrap:wrap;justify-content:center;">
-      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag1">ð Klang Heritage Locations</div>
-      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag2">ð¯ 25 Challenges</div>
-      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag3">ð Points + Bingo Bonus</div>
+      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag1">📍 Klang Heritage Locations</div>
+      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag2">🎯 25 Challenges</div>
+      <div style="background:var(--bg-card);border:1px solid rgba(212,175,55,.2);border-radius:40px;padding:7px 16px;font-size:12px;color:var(--text-muted);" data-i18n="s1_tag3">🏅 Points + Bingo Bonus</div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 2 âââ -->
+<!-- ═══ SLIDE 2 ═══ -->
 <div class="slide" id="slide-2">
   <div class="slide-inner">
     <div class="slide-label">Slide 2</div>
     <h1 class="slide-title" data-i18n="s2_title">Your <span class="gold">Mission</span></h1>
     <p class="slide-subtitle" data-i18n="s2_sub">Complete bingo challenges around Klang heritage locations to earn points.</p>
     <div class="card-grid card-grid-3" style="max-width:760px;">
-      <div class="card"><span class="card-icon">â</span><div class="card-title" data-i18n="s2_c1t">Complete Tasks</div><div class="card-text" data-i18n="s2_c1b">Every completed challenge earns your team points toward the final score.</div></div>
-      <div class="card"><span class="card-icon">ð¯</span><div class="card-title" data-i18n="s2_c2t">Hit Bingo Lines</div><div class="card-text" data-i18n="s2_c2b">Complete a row, column, or diagonal for bonus points on top of task scores.</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s2_c3t">Highest Score Wins</div><div class="card-text" data-i18n="s2_c3b">The team with the most total points at the end takes the championship.</div></div>
+      <div class="card"><span class="card-icon">✅</span><div class="card-title" data-i18n="s2_c1t">Complete Tasks</div><div class="card-text" data-i18n="s2_c1b">Every completed challenge earns your team points toward the final score.</div></div>
+      <div class="card"><span class="card-icon">🎯</span><div class="card-title" data-i18n="s2_c2t">Hit Bingo Lines</div><div class="card-text" data-i18n="s2_c2b">Complete a row, column, or diagonal for bonus points on top of task scores.</div></div>
+      <div class="card"><span class="card-icon">🏆</span><div class="card-title" data-i18n="s2_c3t">Highest Score Wins</div><div class="card-text" data-i18n="s2_c3b">The team with the most total points at the end takes the championship.</div></div>
     </div>
-    <div class="big-rule"><div class="big-rule-text" data-i18n="s2_rule">â ï¸ Safety &gt; Speed â Always</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s2_rule_sub">Rule #1: No task is worth risking injury.</p></div>
+    <div class="big-rule"><div class="big-rule-text" data-i18n="s2_rule">⚠️ Safety &gt; Speed — Always</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s2_rule_sub">Rule #1: No task is worth risking injury.</p></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 3 â BINGO âââ -->
+<!-- ═══ SLIDE 3 — BINGO ═══ -->
 <div class="slide" id="slide-3">
   <div class="slide-inner">
-    <div class="slide-label">Slide 3 â Interactive Demo</div>
+    <div class="slide-label">Slide 3 — Interactive Demo</div>
     <h1 class="slide-title" data-i18n="s3_title">How The <span class="gold">Bingo</span> Works</h1>
-    <p class="slide-subtitle" data-i18n="s3_sub">Click any cell to mark it complete â watch your score and lines build up</p>
+    <p class="slide-subtitle" data-i18n="s3_sub">Click any cell to mark it complete — watch your score and lines build up</p>
     <div id="bingo-layout">
       <div id="bingo-grid-wrap">
         <div id="bingo-header-row">
@@ -267,42 +267,42 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
         <div id="bingo-grid"></div>
       </div>
       <div id="score-panel">
-        <div class="score-header" data-i18n="s3_score_hdr">ð Live Scoreboard</div>
-        <div class="score-row"><div class="score-row-label" data-i18n="s3_tasks_lbl">â Tasks Done</div><div class="score-row-val" id="s-tasks">1/25</div></div>
-        <div class="score-row"><div class="score-row-label" data-i18n="s3_tpts_lbl">ð¯ Task Points</div><div class="score-row-val" id="s-task-pts">+50</div></div>
-        <div class="score-row"><div class="score-row-label" data-i18n="s3_lines_lbl">â­ Lines Hit</div><div class="score-row-val" id="s-lines">0/12</div></div>
-        <div class="score-row"><div class="score-row-label" data-i18n="s3_bonus_lbl">ð Line Bonus</div><div class="score-row-val" id="s-line-bonus">+0</div></div>
-        <div class="score-row" id="fullcard-row"><div class="score-row-label" data-i18n="s3_full_lbl">ð Full Card Bonus</div><div class="score-row-val" style="color:var(--gold-light);">+500</div></div>
+        <div class="score-header" data-i18n="s3_score_hdr">📊 Live Scoreboard</div>
+        <div class="score-row"><div class="score-row-label" data-i18n="s3_tasks_lbl">✅ Tasks Done</div><div class="score-row-val" id="s-tasks">1/25</div></div>
+        <div class="score-row"><div class="score-row-label" data-i18n="s3_tpts_lbl">🎯 Task Points</div><div class="score-row-val" id="s-task-pts">+50</div></div>
+        <div class="score-row"><div class="score-row-label" data-i18n="s3_lines_lbl">⭐ Lines Hit</div><div class="score-row-val" id="s-lines">0/12</div></div>
+        <div class="score-row"><div class="score-row-label" data-i18n="s3_bonus_lbl">🎁 Line Bonus</div><div class="score-row-val" id="s-line-bonus">+0</div></div>
+        <div class="score-row" id="fullcard-row"><div class="score-row-label" data-i18n="s3_full_lbl">💎 Full Card Bonus</div><div class="score-row-val" style="color:var(--gold-light);">+500</div></div>
         <div id="total-box"><div id="total-label" data-i18n="s3_total_lbl">TOTAL SCORE</div><div id="total-val">50</div></div>
         <div id="line-tracker">
           <div id="line-tracker-title" data-i18n="s3_line_tracker">BINGO LINES COMPLETED (100 pts each)</div>
           <div id="line-dots-row"></div>
         </div>
-        <div id="fullcard-banner" data-i18n="s3_fullcard">ð FULL CARD! +500 BONUS PTS</div>
-        <button id="bingo-reset" onclick="resetBingo()" data-i18n="s3_reset">âº RESET BOARD</button>
+        <div id="fullcard-banner" data-i18n="s3_fullcard">🏆 FULL CARD! +500 BONUS PTS</div>
+        <button id="bingo-reset" onclick="resetBingo()" data-i18n="s3_reset">↺ RESET BOARD</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 4 âââ -->
+<!-- ═══ SLIDE 4 ═══ -->
 <div class="slide" id="slide-4">
   <div class="slide-inner">
     <div class="slide-label">Slide 4</div>
     <h1 class="slide-title" data-i18n="s4_title">Read <span class="gold">Clues</span> Carefully</h1>
-    <p class="slide-subtitle" data-i18n="s4_sub">Every clue matters â understand before you move.</p>
+    <p class="slide-subtitle" data-i18n="s4_sub">Every clue matters — understand before you move.</p>
     <div class="two-col">
       <div class="col-panel info">
-        <div class="col-title" data-i18n="s4_col1_title">ð Task Requirements</div>
+        <div class="col-title" data-i18n="s4_col1_title">📋 Task Requirements</div>
         <ul class="col-list">
-          <li data-i18n="s4_i1"><strong>ENTIRE TEAM</strong> required â all appear in photo</li>
-          <li data-i18n="s4_i2"><strong>MINIMUM MEMBERS</strong> stated â comply exactly</li>
-          <li data-i18n="s4_i3"><strong>1 REP</strong> â just one person needed</li>
-          <li data-i18n="s4_i4">If NOT stated â divide &amp; conquer freely</li>
+          <li data-i18n="s4_i1"><strong>ENTIRE TEAM</strong> required — all appear in photo</li>
+          <li data-i18n="s4_i2"><strong>MINIMUM MEMBERS</strong> stated — comply exactly</li>
+          <li data-i18n="s4_i3"><strong>1 REP</strong> — just one person needed</li>
+          <li data-i18n="s4_i4">If NOT stated — divide &amp; conquer freely</li>
         </ul>
       </div>
       <div class="col-panel" style="border-color:rgba(212,175,55,.25);">
-        <div class="col-title" style="color:var(--gold);" data-i18n="s4_col2_title">ð§  Be Creative With Proof</div>
+        <div class="col-title" style="color:var(--gold);" data-i18n="s4_col2_title">🧠 Be Creative With Proof</div>
         <ul class="col-list">
           <li data-i18n="s4_i5">Use video call screenshots</li>
           <li data-i18n="s4_i6">Use reflections (glass/mirror)</li>
@@ -312,438 +312,438 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
         </ul>
       </div>
     </div>
-    <div class="big-rule" style="border-color:rgba(212,175,55,.5);background:rgba(212,175,55,.06);"><div style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold);" data-i18n="s4_rule">All members must be represented â how you achieve it is your strategy.</div></div>
+    <div class="big-rule" style="border-color:rgba(212,175,55,.5);background:rgba(212,175,55,.06);"><div style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold);" data-i18n="s4_rule">All members must be represented — how you achieve it is your strategy.</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 5 âââ -->
+<!-- ═══ SLIDE 5 ═══ -->
 <div class="slide" id="slide-5">
   <div class="slide-inner">
     <div class="slide-label">Slide 5</div>
     <h1 class="slide-title" data-i18n="s5_title">Creativity <span class="gold">Wins</span> Points</h1>
     <div class="two-col">
-      <div class="col-panel allowed"><div class="col-title" data-i18n="s5_a_title">â Allowed</div><ul class="col-list"><li data-i18n="s5_a1">Creative poses</li><li data-i18n="s5_a2">Acting scenes</li><li data-i18n="s5_a3">Storytelling photos</li><li data-i18n="s5_a4">Artistic compositions</li></ul></div>
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s5_f_title">ð« Not Allowed</div><ul class="col-list"><li data-i18n="s5_f1">Blocking walkways</li><li data-i18n="s5_f2">Disturbing the public</li><li data-i18n="s5_f3">Entering restricted areas</li><li data-i18n="s5_f4">Climbing unsafe structures</li></ul></div>
+      <div class="col-panel allowed"><div class="col-title" data-i18n="s5_a_title">✅ Allowed</div><ul class="col-list"><li data-i18n="s5_a1">Creative poses</li><li data-i18n="s5_a2">Acting scenes</li><li data-i18n="s5_a3">Storytelling photos</li><li data-i18n="s5_a4">Artistic compositions</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s5_f_title">🚫 Not Allowed</div><ul class="col-list"><li data-i18n="s5_f1">Blocking walkways</li><li data-i18n="s5_f2">Disturbing the public</li><li data-i18n="s5_f3">Entering restricted areas</li><li data-i18n="s5_f4">Climbing unsafe structures</li></ul></div>
     </div>
-    <div class="big-success"><div class="big-success-text" data-i18n="s5_rule">ð Golden Rule: Be Creative Without Being Disruptive</div></div>
+    <div class="big-success"><div class="big-success-text" data-i18n="s5_rule">🌟 Golden Rule: Be Creative Without Being Disruptive</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 6 âââ -->
+<!-- ═══ SLIDE 6 ═══ -->
 <div class="slide" id="slide-6">
   <div class="slide-inner">
     <div class="slide-label">Slide 6</div>
-    <h1 class="slide-title" data-i18n="s6_title">ð Driving <span class="gold">Safety</span></h1>
+    <h1 class="slide-title" data-i18n="s6_title">🚗 Driving <span class="gold">Safety</span></h1>
     <div class="two-col">
-      <div class="col-panel allowed"><div class="col-title" data-i18n="s6_a_title">â Drivers Must</div><ul class="col-list"><li data-i18n="s6_a1">Follow all traffic laws</li><li data-i18n="s6_a2">No speeding</li><li data-i18n="s6_a3">No racing other teams</li><li data-i18n="s6_a4">No dangerous shortcuts</li></ul></div>
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s6_f_title">ð« Strictly Prohibited</div><ul class="col-list"><li data-i18n="s6_f1">Using phone while driving</li><li data-i18n="s6_f2">Double parking</li><li data-i18n="s6_f3">Illegal U-turns</li><li data-i18n="s6_f4">Dangerous stops</li></ul></div>
+      <div class="col-panel allowed"><div class="col-title" data-i18n="s6_a_title">✅ Drivers Must</div><ul class="col-list"><li data-i18n="s6_a1">Follow all traffic laws</li><li data-i18n="s6_a2">No speeding</li><li data-i18n="s6_a3">No racing other teams</li><li data-i18n="s6_a4">No dangerous shortcuts</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s6_f_title">🚫 Strictly Prohibited</div><ul class="col-list"><li data-i18n="s6_f1">Using phone while driving</li><li data-i18n="s6_f2">Double parking</li><li data-i18n="s6_f3">Illegal U-turns</li><li data-i18n="s6_f4">Dangerous stops</li></ul></div>
     </div>
-    <div class="big-rule"><div class="big-rule-text" data-i18n="s6_rule">ð This Is NOT A Road Race</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s6_rule_sub">Penalty may be given for unsafe behaviour on the road.</p></div>
+    <div class="big-rule"><div class="big-rule-text" data-i18n="s6_rule">🛑 This Is NOT A Road Race</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s6_rule_sub">Penalty may be given for unsafe behaviour on the road.</p></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 7 âââ -->
+<!-- ═══ SLIDE 7 ═══ -->
 <div class="slide" id="slide-7">
   <div class="slide-inner">
     <div class="slide-label">Slide 7</div>
     <h1 class="slide-title" data-i18n="s7_title">Respect <span class="gold">Public</span> Space</h1>
     <div class="two-col">
-      <div class="col-panel allowed"><div class="col-title" data-i18n="s7_a_title">â Always</div><ul class="col-list"><li data-i18n="s7_a1">Park legally</li><li data-i18n="s7_a2">Use proper parking lots</li><li data-i18n="s7_a3">Respect shop owners</li><li data-i18n="s7_a4">Keep pathways clear</li></ul></div>
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s7_f_title">ð« Do NOT</div><ul class="col-list"><li data-i18n="s7_f1">Litter anywhere</li><li data-i18n="s7_f2">Move public property</li><li data-i18n="s7_f3">Touch shop items without permission</li><li data-i18n="s7_f4">Disturb locals</li></ul></div>
+      <div class="col-panel allowed"><div class="col-title" data-i18n="s7_a_title">✅ Always</div><ul class="col-list"><li data-i18n="s7_a1">Park legally</li><li data-i18n="s7_a2">Use proper parking lots</li><li data-i18n="s7_a3">Respect shop owners</li><li data-i18n="s7_a4">Keep pathways clear</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s7_f_title">🚫 Do NOT</div><ul class="col-list"><li data-i18n="s7_f1">Litter anywhere</li><li data-i18n="s7_f2">Move public property</li><li data-i18n="s7_f3">Touch shop items without permission</li><li data-i18n="s7_f4">Disturb locals</li></ul></div>
     </div>
     <div class="card-grid card-grid-3" style="max-width:600px;">
-      <div class="card"><span class="card-icon">ð¢</span><div class="card-title" data-i18n="s7_c1">Your Company</div></div>
-      <div class="card"><span class="card-icon">ðï¸</span><div class="card-title" data-i18n="s7_c2">The Organizer</div></div>
-      <div class="card"><span class="card-icon">ð§</span><div class="card-title" data-i18n="s7_c3">Yourself</div></div>
+      <div class="card"><span class="card-icon">🏢</span><div class="card-title" data-i18n="s7_c1">Your Company</div></div>
+      <div class="card"><span class="card-icon">🎗️</span><div class="card-title" data-i18n="s7_c2">The Organizer</div></div>
+      <div class="card"><span class="card-icon">🧑</span><div class="card-title" data-i18n="s7_c3">Yourself</div></div>
     </div>
     <p style="font-size:12px;color:var(--text-muted);text-align:center;" data-i18n="s7_note">You represent all three. Act professionally.</p>
   </div>
 </div>
 
-<!-- âââ SLIDE 8 âââ -->
+<!-- ═══ SLIDE 8 ═══ -->
 <div class="slide" id="slide-8">
   <div class="slide-inner">
     <div class="slide-label">Slide 8</div>
-    <h1 class="slide-title" data-i18n="s8_title">â ï¸ Safety <span class="gold">Awareness</span></h1>
+    <h1 class="slide-title" data-i18n="s8_title">⚠️ Safety <span class="gold">Awareness</span></h1>
     <div class="card-grid card-grid-3" style="max-width:800px;">
-      <div class="card"><span class="card-icon">ð¦</span><div class="card-title" data-i18n="s8_c1t">Road Crossing</div><div class="card-text" data-i18n="s8_c1b">Always use pedestrian crossings. Watch for traffic.</div></div>
-      <div class="card"><span class="card-icon">ð¡ï¸</span><div class="card-title" data-i18n="s8_c2t">Heat Exhaustion</div><div class="card-text" data-i18n="s8_c2b">Stay hydrated. Rest in shade. Report if unwell.</div></div>
-      <div class="card"><span class="card-icon">ð§</span><div class="card-title" data-i18n="s8_c3t">Dehydration</div><div class="card-text" data-i18n="s8_c3b">Drink water consistently throughout the day.</div></div>
-      <div class="card"><span class="card-icon">ðï¸</span><div class="card-title" data-i18n="s8_c4t">Construction Areas</div><div class="card-text" data-i18n="s8_c4b">Avoid all construction zones. Do not enter.</div></div>
-      <div class="card"><span class="card-icon">ð§</span><div class="card-title" data-i18n="s8_c5t">Slippery Surfaces</div><div class="card-text" data-i18n="s8_c5b">Walk carefully on wet or uneven surfaces.</div></div>
-      <div class="card"><span class="card-icon">ð¤</span><div class="card-title" data-i18n="s8_c6t">Help Teammates</div><div class="card-text" data-i18n="s8_c6b">Look out for each other. No one left behind.</div></div>
+      <div class="card"><span class="card-icon">🚦</span><div class="card-title" data-i18n="s8_c1t">Road Crossing</div><div class="card-text" data-i18n="s8_c1b">Always use pedestrian crossings. Watch for traffic.</div></div>
+      <div class="card"><span class="card-icon">🌡️</span><div class="card-title" data-i18n="s8_c2t">Heat Exhaustion</div><div class="card-text" data-i18n="s8_c2b">Stay hydrated. Rest in shade. Report if unwell.</div></div>
+      <div class="card"><span class="card-icon">💧</span><div class="card-title" data-i18n="s8_c3t">Dehydration</div><div class="card-text" data-i18n="s8_c3b">Drink water consistently throughout the day.</div></div>
+      <div class="card"><span class="card-icon">🏗️</span><div class="card-title" data-i18n="s8_c4t">Construction Areas</div><div class="card-text" data-i18n="s8_c4b">Avoid all construction zones. Do not enter.</div></div>
+      <div class="card"><span class="card-icon">🧊</span><div class="card-title" data-i18n="s8_c5t">Slippery Surfaces</div><div class="card-text" data-i18n="s8_c5b">Walk carefully on wet or uneven surfaces.</div></div>
+      <div class="card"><span class="card-icon">🤝</span><div class="card-title" data-i18n="s8_c6t">Help Teammates</div><div class="card-text" data-i18n="s8_c6b">Look out for each other. No one left behind.</div></div>
     </div>
-    <div class="big-rule" style="margin-top:4px;"><div class="big-rule-text" data-i18n="s8_rule">Move Fast In Thinking â Slow In Movement</div></div>
+    <div class="big-rule" style="margin-top:4px;"><div class="big-rule-text" data-i18n="s8_rule">Move Fast In Thinking — Slow In Movement</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 9 âââ -->
+<!-- ═══ SLIDE 9 ═══ -->
 <div class="slide" id="slide-9">
   <div class="slide-inner" style="text-align:center;">
     <div class="slide-label">Slide 9</div>
-    <h1 class="slide-title" data-i18n="s9_title">ð Language <span class="gold">Support</span></h1>
+    <h1 class="slide-title" data-i18n="s9_title">🌐 Language <span class="gold">Support</span></h1>
     <p class="slide-subtitle" data-i18n="s9_sub">All clues available in 3 languages</p>
     <div style="display:flex;gap:13px;justify-content:center;max-width:660px;width:100%;">
-      <div class="lang-card"><span class="lang-flag">ð¬ð§</span><div class="lang-name">English</div><div class="lang-native">English</div></div>
-      <div class="lang-card"><span class="lang-flag">ð²ð¾</span><div class="lang-name" data-i18n="s9_bm">Bahasa Malaysia</div><div class="lang-native">BM</div></div>
-      <div class="lang-card"><span class="lang-flag">ð¨ð³</span><div class="lang-name" data-i18n="s9_zh">Chinese</div><div class="lang-native" data-i18n="s9_zh_sub">ä¸­æ</div></div>
+      <div class="lang-card"><span class="lang-flag">🇬🇧</span><div class="lang-name">English</div><div class="lang-native">English</div></div>
+      <div class="lang-card"><span class="lang-flag">🇲🇾</span><div class="lang-name" data-i18n="s9_bm">Bahasa Malaysia</div><div class="lang-native">BM</div></div>
+      <div class="lang-card"><span class="lang-flag">🇨🇳</span><div class="lang-name" data-i18n="s9_zh">Chinese</div><div class="lang-native" data-i18n="s9_zh_sub">中文</div></div>
     </div>
-    <div class="big-success" style="margin-top:10px;"><div class="big-success-text" data-i18n="s9_tip">ð¡ Switch language at top of the system</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s9_tip2">Choose the language your team understands best.</p></div>
+    <div class="big-success" style="margin-top:10px;"><div class="big-success-text" data-i18n="s9_tip">💡 Switch language at top of the system</div><p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s9_tip2">Choose the language your team understands best.</p></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 10 âââ -->
+<!-- ═══ SLIDE 10 ═══ -->
 <div class="slide" id="slide-10">
   <div class="slide-inner">
     <div class="slide-label">Slide 10</div>
-    <h1 class="slide-title" data-i18n="s10_title">ð What To <span class="gold">Wear</span></h1>
+    <h1 class="slide-title" data-i18n="s10_title">👕 What To <span class="gold">Wear</span></h1>
     <div class="two-col">
-      <div class="col-panel allowed"><div class="col-title" data-i18n="s10_a_title">â Recommended</div><ul class="col-list"><li data-i18n="s10_a1">Comfortable clothing</li><li data-i18n="s10_a2">Sports or walking shoes</li><li data-i18n="s10_a3">Light breathable clothes</li></ul></div>
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s10_f_title">ð« Avoid</div><ul class="col-list"><li data-i18n="s10_f1">Slippers or sandals</li><li data-i18n="s10_f2">Formal shoes</li><li data-i18n="s10_f3">Heavy bags</li><li data-i18n="s10_f4">Restrictive clothing</li></ul></div>
+      <div class="col-panel allowed"><div class="col-title" data-i18n="s10_a_title">✅ Recommended</div><ul class="col-list"><li data-i18n="s10_a1">Comfortable clothing</li><li data-i18n="s10_a2">Sports or walking shoes</li><li data-i18n="s10_a3">Light breathable clothes</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s10_f_title">🚫 Avoid</div><ul class="col-list"><li data-i18n="s10_f1">Slippers or sandals</li><li data-i18n="s10_f2">Formal shoes</li><li data-i18n="s10_f3">Heavy bags</li><li data-i18n="s10_f4">Restrictive clothing</li></ul></div>
     </div>
     <div class="card-grid card-grid-3" style="max-width:600px;">
-      <div class="card"><span class="card-icon">ð§¢</span><div class="card-title" data-i18n="s10_c1t">Cap</div><div class="card-text" data-i18n="s10_c1b">Protect from sun exposure</div></div>
-      <div class="card"><span class="card-icon">ð¶ï¸</span><div class="card-title" data-i18n="s10_c2t">Sunglasses</div><div class="card-text" data-i18n="s10_c2b">Eye protection outdoors</div></div>
-      <div class="card"><span class="card-icon">ð§´</span><div class="card-title" data-i18n="s10_c3t">Sunscreen</div><div class="card-text" data-i18n="s10_c3b">Apply before you start</div></div>
+      <div class="card"><span class="card-icon">🧢</span><div class="card-title" data-i18n="s10_c1t">Cap</div><div class="card-text" data-i18n="s10_c1b">Protect from sun exposure</div></div>
+      <div class="card"><span class="card-icon">🕶️</span><div class="card-title" data-i18n="s10_c2t">Sunglasses</div><div class="card-text" data-i18n="s10_c2b">Eye protection outdoors</div></div>
+      <div class="card"><span class="card-icon">🧴</span><div class="card-title" data-i18n="s10_c3t">Sunscreen</div><div class="card-text" data-i18n="s10_c3b">Apply before you start</div></div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 11 âââ -->
+<!-- ═══ SLIDE 11 ═══ -->
 <div class="slide" id="slide-11">
   <div class="slide-inner">
     <div class="slide-label">Slide 11</div>
-    <h1 class="slide-title" data-i18n="s11_title">ð What To <span class="gold">Bring</span></h1>
+    <h1 class="slide-title" data-i18n="s11_title">🎒 What To <span class="gold">Bring</span></h1>
     <div class="card-grid card-grid-3" style="max-width:760px;">
-      <div class="card"><span class="card-icon">ð±</span><div class="card-title" data-i18n="s11_c1t">Charged Phone</div><div class="card-text" data-i18n="s11_c1b">Fully charged. Team phone with internet access required.</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s11_c2t">Power Bank</div><div class="card-text" data-i18n="s11_c2b">Keep your phone alive throughout the full day.</div></div>
-      <div class="card"><span class="card-icon">ð§</span><div class="card-title" data-i18n="s11_c3t">Water Bottle</div><div class="card-text" data-i18n="s11_c3b">Stay hydrated. Essential for a full day outdoor event.</div></div>
-      <div class="card"><span class="card-icon">ðµ</span><div class="card-title" data-i18n="s11_c4t">Small Cash</div><div class="card-text" data-i18n="s11_c4b">For unexpected needs, parking, or small purchases.</div></div>
-      <div class="card" style="border-color:rgba(212,175,55,.08);"><span class="card-icon">âï¸</span><div class="card-title" data-i18n="s11_c5t">Umbrella</div><div class="card-text" data-i18n="s11_c5b">Optional â useful if weather changes.</div></div>
-      <div class="card" style="border-color:rgba(212,175,55,.08);"><span class="card-icon">ð«</span><div class="card-title" data-i18n="s11_c6t">Snacks</div><div class="card-text" data-i18n="s11_c6b">Optional. Keep energy up between activities.</div></div>
+      <div class="card"><span class="card-icon">📱</span><div class="card-title" data-i18n="s11_c1t">Charged Phone</div><div class="card-text" data-i18n="s11_c1b">Fully charged. Team phone with internet access required.</div></div>
+      <div class="card"><span class="card-icon">🔋</span><div class="card-title" data-i18n="s11_c2t">Power Bank</div><div class="card-text" data-i18n="s11_c2b">Keep your phone alive throughout the full day.</div></div>
+      <div class="card"><span class="card-icon">💧</span><div class="card-title" data-i18n="s11_c3t">Water Bottle</div><div class="card-text" data-i18n="s11_c3b">Stay hydrated. Essential for a full day outdoor event.</div></div>
+      <div class="card"><span class="card-icon">💵</span><div class="card-title" data-i18n="s11_c4t">Small Cash</div><div class="card-text" data-i18n="s11_c4b">For unexpected needs, parking, or small purchases.</div></div>
+      <div class="card" style="border-color:rgba(212,175,55,.08);"><span class="card-icon">☂️</span><div class="card-title" data-i18n="s11_c5t">Umbrella</div><div class="card-text" data-i18n="s11_c5b">Optional — useful if weather changes.</div></div>
+      <div class="card" style="border-color:rgba(212,175,55,.08);"><span class="card-icon">🍫</span><div class="card-title" data-i18n="s11_c6t">Snacks</div><div class="card-text" data-i18n="s11_c6b">Optional. Keep energy up between activities.</div></div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 12 âââ -->
+<!-- ═══ SLIDE 12 ═══ -->
 <div class="slide" id="slide-12">
   <div class="slide-inner">
     <div class="slide-label">Slide 12</div>
-    <h1 class="slide-title" data-i18n="s12_title">ð¬ WhatsApp <span class="gold">Group Setup</span></h1>
+    <h1 class="slide-title" data-i18n="s12_title">💬 WhatsApp <span class="gold">Group Setup</span></h1>
     <p class="slide-subtitle" data-i18n="s12_sub">Each team MUST create a WhatsApp group before start</p>
     <div class="two-col">
-      <div class="col-panel info"><div class="col-title" data-i18n="s12_c1_title">ð² Include In Group</div><ul class="col-list"><li data-i18n="s12_i1">All team members</li><li data-i18n="s12_i2">Facilitator contact</li><li data-i18n="s12_i3">Emergency contact number</li></ul></div>
-      <div class="col-panel" style="border-color:rgba(34,197,94,.25);"><div class="col-title" style="color:var(--green);" data-i18n="s12_c2_title">ð¯ Group Purpose</div><ul class="col-list"><li data-i18n="s12_i4">Team coordination</li><li data-i18n="s12_i5">Emergency communication</li><li data-i18n="s12_i6">Task clarifications</li><li data-i18n="s12_i7">Submission backup</li></ul></div>
+      <div class="col-panel info"><div class="col-title" data-i18n="s12_c1_title">📲 Include In Group</div><ul class="col-list"><li data-i18n="s12_i1">All team members</li><li data-i18n="s12_i2">Facilitator contact</li><li data-i18n="s12_i3">Emergency contact number</li></ul></div>
+      <div class="col-panel" style="border-color:rgba(34,197,94,.25);"><div class="col-title" style="color:var(--green);" data-i18n="s12_c2_title">🎯 Group Purpose</div><ul class="col-list"><li data-i18n="s12_i4">Team coordination</li><li data-i18n="s12_i5">Emergency communication</li><li data-i18n="s12_i6">Task clarifications</li><li data-i18n="s12_i7">Submission backup</li></ul></div>
     </div>
-    <div class="big-rule" style="border-color:rgba(251,146,60,.5);background:rgba(251,146,60,.08);"><div style="font-family:'Cinzel',serif;font-size:16px;color:var(--orange);" data-i18n="s12_rule">â° Do This Before The Hunt Starts</div></div>
+    <div class="big-rule" style="border-color:rgba(251,146,60,.5);background:rgba(251,146,60,.08);"><div style="font-family:'Cinzel',serif;font-size:16px;color:var(--orange);" data-i18n="s12_rule">⏰ Do This Before The Hunt Starts</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 13 â EMERGENCY âââ -->
+<!-- ═══ SLIDE 13 — EMERGENCY ═══ -->
 <div class="slide" id="slide-13">
   <div class="slide-inner">
     <div class="slide-label">Slide 13</div>
-    <h1 class="slide-title" data-i18n="s13_title">ð Emergency <span class="gold">Contact</span></h1>
+    <h1 class="slide-title" data-i18n="s13_title">🆘 Emergency <span class="gold">Contact</span></h1>
 
     <!-- CONTACT CARDS -->
     <div class="contact-row">
       <div class="contact-card">
-        <div class="contact-avatar">ð¨âð¼</div>
+        <div class="contact-avatar">👨‍💼</div>
         <div class="contact-role" data-i18n="s13_bryan_role">Game Master</div>
         <div class="contact-name">Bryan</div>
         <a class="contact-num" href="tel:+60126611043">012 661 1043</a>
         <div class="contact-badges">
-          <span class="badge-call" data-i18n="s13_call">ð Call</span>
-          <span class="badge-wa" data-i18n="s13_wa">ð¬ WhatsApp</span>
+          <span class="badge-call" data-i18n="s13_call">📞 Call</span>
+          <span class="badge-wa" data-i18n="s13_wa">💬 WhatsApp</span>
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-avatar">ð¡ï¸</div>
+        <div class="contact-avatar">🛡️</div>
         <div class="contact-role" data-i18n="s13_seb_role">Safety Officer</div>
         <div class="contact-name">Sebastian</div>
         <a class="contact-num" href="tel:+60126365787">012-636 5787</a>
         <div class="contact-badges">
-          <span class="badge-call" data-i18n="s13_call2">ð Call</span>
+          <span class="badge-call" data-i18n="s13_call2">📞 Call</span>
         </div>
       </div>
     </div>
 
     <div class="card-grid card-grid-4" style="max-width:760px;">
-      <div class="card"><span class="card-icon">ð¤</span><div class="card-title" data-i18n="s13_c1">Injury</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s13_c2">Lost Participant</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s13_c3">Vehicle Issue</div></div>
-      <div class="card"><span class="card-icon">ð¡ï¸</span><div class="card-title" data-i18n="s13_c4">Heat Exhaustion</div></div>
+      <div class="card"><span class="card-icon">🤕</span><div class="card-title" data-i18n="s13_c1">Injury</div></div>
+      <div class="card"><span class="card-icon">🔍</span><div class="card-title" data-i18n="s13_c2">Lost Participant</div></div>
+      <div class="card"><span class="card-icon">🚗</span><div class="card-title" data-i18n="s13_c3">Vehicle Issue</div></div>
+      <div class="card"><span class="card-icon">🌡️</span><div class="card-title" data-i18n="s13_c4">Heat Exhaustion</div></div>
     </div>
-    <div class="big-rule"><div class="big-rule-text" data-i18n="s13_rule">Report Early â Not Late</div></div>
+    <div class="big-rule"><div class="big-rule-text" data-i18n="s13_rule">Report Early — Not Late</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 14 âââ -->
+<!-- ═══ SLIDE 14 ═══ -->
 <div class="slide" id="slide-14">
   <div class="slide-inner">
     <div class="slide-label">Slide 14</div>
-    <h1 class="slide-title" data-i18n="s14_title">âï¸ Play <span class="gold">Fair</span></h1>
+    <h1 class="slide-title" data-i18n="s14_title">⚖️ Play <span class="gold">Fair</span></h1>
     <div class="two-col">
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s14_f_title">ð« Do NOT</div><ul class="col-list"><li data-i18n="s14_f1">Cheat in any form</li><li data-i18n="s14_f2">Submit fake or staged evidence</li><li data-i18n="s14_f3">Use old or recycled photos</li><li data-i18n="s14_f4">Copy other teams' submissions</li></ul></div>
-      <div class="col-panel warning"><div class="col-title" data-i18n="s14_w_title">â ï¸ Violations May Cause</div><ul class="col-list"><li data-i18n="s14_w1">Point deduction</li><li data-i18n="s14_w2">Task disqualification</li><li data-i18n="s14_w3">Full team penalty</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s14_f_title">🚫 Do NOT</div><ul class="col-list"><li data-i18n="s14_f1">Cheat in any form</li><li data-i18n="s14_f2">Submit fake or staged evidence</li><li data-i18n="s14_f3">Use old or recycled photos</li><li data-i18n="s14_f4">Copy other teams' submissions</li></ul></div>
+      <div class="col-panel warning"><div class="col-title" data-i18n="s14_w_title">⚠️ Violations May Cause</div><ul class="col-list"><li data-i18n="s14_w1">Point deduction</li><li data-i18n="s14_w2">Task disqualification</li><li data-i18n="s14_w3">Full team penalty</li></ul></div>
     </div>
-    <div class="big-success"><div class="big-success-text" data-i18n="s14_rule">ð Integrity Matters More Than Winning</div></div>
+    <div class="big-success"><div class="big-success-text" data-i18n="s14_rule">🏅 Integrity Matters More Than Winning</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 15 âââ -->
+<!-- ═══ SLIDE 15 ═══ -->
 <div class="slide" id="slide-15">
   <div class="slide-inner">
     <div class="slide-label">Slide 15</div>
-    <h1 class="slide-title" data-i18n="s15_title">â±ï¸ Time <span class="gold">Management</span></h1>
+    <h1 class="slide-title" data-i18n="s15_title">⏱️ Time <span class="gold">Management</span></h1>
     <div class="two-col">
-      <div class="col-panel allowed"><div class="col-title" data-i18n="s15_a_title">â Smart Teams</div><ul class="col-list"><li data-i18n="s15_a1">Plan the route first</li><li data-i18n="s15_a2">Assign clear roles</li><li data-i18n="s15_a3">Prioritize high-value tasks</li><li data-i18n="s15_a4">Track time constantly</li></ul></div>
-      <div class="col-panel forbidden"><div class="col-title" data-i18n="s15_f_title">â Losing Teams</div><ul class="col-list"><li data-i18n="s15_f1">Random running around</li><li data-i18n="s15_f2">No internal communication</li><li data-i18n="s15_f3">No plan or strategy</li><li data-i18n="s15_f4">Wasting time on low scores</li></ul></div>
+      <div class="col-panel allowed"><div class="col-title" data-i18n="s15_a_title">✅ Smart Teams</div><ul class="col-list"><li data-i18n="s15_a1">Plan the route first</li><li data-i18n="s15_a2">Assign clear roles</li><li data-i18n="s15_a3">Prioritize high-value tasks</li><li data-i18n="s15_a4">Track time constantly</li></ul></div>
+      <div class="col-panel forbidden"><div class="col-title" data-i18n="s15_f_title">❌ Losing Teams</div><ul class="col-list"><li data-i18n="s15_f1">Random running around</li><li data-i18n="s15_f2">No internal communication</li><li data-i18n="s15_f3">No plan or strategy</li><li data-i18n="s15_f4">Wasting time on low scores</li></ul></div>
     </div>
-    <div class="big-success"><div class="big-success-text" data-i18n="s15_rule">ð§  Strategy Wins More Than Speed</div></div>
+    <div class="big-success"><div class="big-success-text" data-i18n="s15_rule">🧠 Strategy Wins More Than Speed</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 16 âââ -->
+<!-- ═══ SLIDE 16 ═══ -->
 <div class="slide" id="slide-16">
   <div class="slide-inner" style="text-align:center;">
     <div class="slide-label">Slide 16</div>
-    <h1 class="slide-title" data-i18n="s16_title">ðï¸ Respect <span class="gold">Heritage Sites</span></h1>
+    <h1 class="slide-title" data-i18n="s16_title">🏛️ Respect <span class="gold">Heritage Sites</span></h1>
     <p class="slide-subtitle" data-i18n="s16_sub">These are real historical locations. Treat them like museums.</p>
     <ul class="rule-list">
-      <li><span class="icon">ð«</span><span data-i18n="s16_r1">Do <strong>NOT</strong> climb monuments or heritage structures â even for a photo</span></li>
-      <li><span class="icon">ð«</span><span data-i18n="s16_r2">Do <strong>NOT</strong> sit on or lean against heritage structures</span></li>
-      <li><span class="icon">ð«</span><span data-i18n="s16_r3">Do <strong>NOT</strong> touch fragile items or artifacts</span></li>
-      <li><span class="icon">ð«</span><span data-i18n="s16_r4">Do <strong>NOT</strong> damage, mark, or deface murals and walls</span></li>
+      <li><span class="icon">🚫</span><span data-i18n="s16_r1">Do <strong>NOT</strong> climb monuments or heritage structures — even for a photo</span></li>
+      <li><span class="icon">🚫</span><span data-i18n="s16_r2">Do <strong>NOT</strong> sit on or lean against heritage structures</span></li>
+      <li><span class="icon">🚫</span><span data-i18n="s16_r3">Do <strong>NOT</strong> touch fragile items or artifacts</span></li>
+      <li><span class="icon">🚫</span><span data-i18n="s16_r4">Do <strong>NOT</strong> damage, mark, or deface murals and walls</span></li>
     </ul>
     <div class="big-rule" style="margin-top:8px;"><div class="big-rule-text" data-i18n="s16_rule">These Places Are Part Of Malaysia's History.</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 17 âââ -->
+<!-- ═══ SLIDE 17 ═══ -->
 <div class="slide" id="slide-17">
   <div class="slide-inner">
     <div class="slide-label">Slide 17</div>
-    <h1 class="slide-title" data-i18n="s17_title">ð¤ Submission <span class="gold">Rules</span></h1>
+    <h1 class="slide-title" data-i18n="s17_title">📤 Submission <span class="gold">Rules</span></h1>
     <ul class="rule-list">
-      <li><span class="icon">ð¸</span><span data-i18n="s17_r1">Submit the <strong>correct photo</strong> â clear, readable, matching the task</span></li>
-      <li><span class="icon">ð</span><span data-i18n="s17_r2">Photo must show <strong>clear proof</strong> of task completion</span></li>
-      <li><span class="icon">â</span><span data-i18n="s17_r3">Ensure it is the <strong>right task</strong> box you are completing</span></li>
-      <li><span class="icon">ð¥</span><span data-i18n="s17_r4">Include the <strong>right team members</strong> as required by the clue</span></li>
-      <li><span class="icon">â°</span><span data-i18n="s17_r5"><strong>Late submission penalty</strong> may apply â submit on time</span></li>
-      <li><span class="icon">ð</span><span data-i18n="s17_r6"><strong>Team Captain</strong> submits only â one submission per task</span></li>
+      <li><span class="icon">📸</span><span data-i18n="s17_r1">Submit the <strong>correct photo</strong> — clear, readable, matching the task</span></li>
+      <li><span class="icon">🆔</span><span data-i18n="s17_r2">Photo must show <strong>clear proof</strong> of task completion</span></li>
+      <li><span class="icon">✅</span><span data-i18n="s17_r3">Ensure it is the <strong>right task</strong> box you are completing</span></li>
+      <li><span class="icon">👥</span><span data-i18n="s17_r4">Include the <strong>right team members</strong> as required by the clue</span></li>
+      <li><span class="icon">⏰</span><span data-i18n="s17_r5"><strong>Late submission penalty</strong> may apply — submit on time</span></li>
+      <li><span class="icon">👑</span><span data-i18n="s17_r6"><strong>Team Captain</strong> submits only — one submission per task</span></li>
     </ul>
   </div>
 </div>
 
-<!-- âââ SLIDE 18 âââ -->
+<!-- ═══ SLIDE 18 ═══ -->
 <div class="slide" id="slide-18">
   <div class="slide-inner">
     <div class="slide-label">Slide 18</div>
-    <h1 class="slide-title" data-i18n="s18_title">â ï¸ Penalty <span class="gold">System</span></h1>
+    <h1 class="slide-title" data-i18n="s18_title">⚠️ Penalty <span class="gold">System</span></h1>
     <table class="penalty-table">
       <thead><tr><th data-i18n="s18_th1">Violation</th><th style="text-align:right;" data-i18n="s18_th2">Consequence</th></tr></thead>
       <tbody>
-        <tr><td data-i18n="s18_v1">ð¨ Unsafe Behaviour</td><td data-i18n="s18_p1">-50 pts</td></tr>
-        <tr><td data-i18n="s18_v2">â° Late Submission</td><td data-i18n="s18_p2">-20 pts</td></tr>
-        <tr><td data-i18n="s18_v3">ð¿ï¸ Illegal Parking</td><td data-i18n="s18_p3">-50 pts</td></tr>
-        <tr class="disq"><td data-i18n="s18_v4">â Fake Submission</td><td data-i18n="s18_p4">DISQUALIFIED</td></tr>
+        <tr><td data-i18n="s18_v1">🚨 Unsafe Behaviour</td><td data-i18n="s18_p1">-50 pts</td></tr>
+        <tr><td data-i18n="s18_v2">⏰ Late Submission</td><td data-i18n="s18_p2">-20 pts</td></tr>
+        <tr><td data-i18n="s18_v3">🅿️ Illegal Parking</td><td data-i18n="s18_p3">-50 pts</td></tr>
+        <tr class="disq"><td data-i18n="s18_v4">❌ Fake Submission</td><td data-i18n="s18_p4">DISQUALIFIED</td></tr>
       </tbody>
     </table>
     <div class="big-rule" style="margin-top:12px;"><div class="big-rule-text" data-i18n="s18_rule">Don't Let A Shortcut Cost You The Game</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 19 âââ -->
+<!-- ═══ SLIDE 19 ═══ -->
 <div class="slide" id="slide-19">
   <div class="slide-inner">
     <div class="slide-label">Slide 19</div>
-    <h1 class="slide-title" data-i18n="s19_title">ð§ï¸ Weather <span class="gold">Protocol</span></h1>
+    <h1 class="slide-title" data-i18n="s19_title">🌧️ Weather <span class="gold">Protocol</span></h1>
     <div class="two-col">
-      <div class="col-panel info"><div class="col-title" data-i18n="s19_r_title">ð§ï¸ If Heavy Rain</div><ul class="col-list"><li data-i18n="s19_r1">Pause activity immediately</li><li data-i18n="s19_r2">Move to safe shelter</li><li data-i18n="s19_r3">Await organizer instructions</li></ul></div>
-      <div class="col-panel warning"><div class="col-title" data-i18n="s19_h_title">âï¸ If Extreme Heat</div><ul class="col-list"><li data-i18n="s19_h1">Hydrate immediately</li><li data-i18n="s19_h2">Rest in shade</li><li data-i18n="s19_h3">Inform facilitator if unwell</li></ul></div>
+      <div class="col-panel info"><div class="col-title" data-i18n="s19_r_title">🌧️ If Heavy Rain</div><ul class="col-list"><li data-i18n="s19_r1">Pause activity immediately</li><li data-i18n="s19_r2">Move to safe shelter</li><li data-i18n="s19_r3">Await organizer instructions</li></ul></div>
+      <div class="col-panel warning"><div class="col-title" data-i18n="s19_h_title">☀️ If Extreme Heat</div><ul class="col-list"><li data-i18n="s19_h1">Hydrate immediately</li><li data-i18n="s19_h2">Rest in shade</li><li data-i18n="s19_h3">Inform facilitator if unwell</li></ul></div>
     </div>
-    <div class="big-success"><div class="big-success-text" data-i18n="s19_rule">ðï¸ Organizer May Adjust Game Timing For Safety</div></div>
+    <div class="big-success"><div class="big-success-text" data-i18n="s19_rule">🗓️ Organizer May Adjust Game Timing For Safety</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 20 âââ -->
+<!-- ═══ SLIDE 20 ═══ -->
 <div class="slide" id="slide-20">
   <div class="slide-inner">
     <div class="slide-label">Slide 20</div>
-    <h1 class="slide-title" data-i18n="s20_title">ð If Problems <span class="gold">Occur</span></h1>
+    <h1 class="slide-title" data-i18n="s20_title">🆘 If Problems <span class="gold">Occur</span></h1>
     <div class="card-grid card-grid-3" style="max-width:760px;">
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s20_c1t">Team Gets Lost</div><div class="card-text" data-i18n="s20_c1b">Contact facilitator immediately via WhatsApp or call.</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s20_c2t">Phone Dies</div><div class="card-text" data-i18n="s20_c2b">Return to nearest checkpoint right away.</div></div>
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s20_c3t">Vehicle Breakdown</div><div class="card-text" data-i18n="s20_c3b">Inform organizer immediately. Stay safe and off road.</div></div>
+      <div class="card"><span class="card-icon">🔍</span><div class="card-title" data-i18n="s20_c1t">Team Gets Lost</div><div class="card-text" data-i18n="s20_c1b">Contact facilitator immediately via WhatsApp or call.</div></div>
+      <div class="card"><span class="card-icon">🔋</span><div class="card-title" data-i18n="s20_c2t">Phone Dies</div><div class="card-text" data-i18n="s20_c2b">Return to nearest checkpoint right away.</div></div>
+      <div class="card"><span class="card-icon">🚗</span><div class="card-title" data-i18n="s20_c3t">Vehicle Breakdown</div><div class="card-text" data-i18n="s20_c3b">Inform organizer immediately. Stay safe and off road.</div></div>
     </div>
-    <div class="big-rule"><div class="big-rule-text" data-i18n="s20_rule">ð Never Disappear Without Informing</div></div>
+    <div class="big-rule"><div class="big-rule-text" data-i18n="s20_rule">🔕 Never Disappear Without Informing</div></div>
   </div>
 </div>
 
-<!-- âââ SLIDE 21 âââ -->
+<!-- ═══ SLIDE 21 ═══ -->
 <div class="slide" id="slide-21">
   <div class="slide-inner" style="text-align:center;">
     <div class="slide-label">Slide 21</div>
-    <h1 class="slide-title" data-i18n="s21_title">ðï¸ Scoring <span class="gold">Disputes</span></h1>
-    <div style="font-size:60px;margin:16px 0;animation:float 4s ease-in-out infinite;">âï¸</div>
+    <h1 class="slide-title" data-i18n="s21_title">🏛️ Scoring <span class="gold">Disputes</span></h1>
+    <div style="font-size:60px;margin:16px 0;animation:float 4s ease-in-out infinite;">⚖️</div>
     <div class="big-rule" style="border-color:rgba(212,175,55,.5);background:rgba(212,175,55,.08);"><div style="font-family:'Cinzel',serif;font-size:19px;color:var(--gold);" data-i18n="s21_rule">Game Master Decision Is Final</div></div>
     <p style="font-size:14px;color:var(--text-muted);max-width:500px;text-align:center;margin-top:7px;" data-i18n="s21_para">Respect decisions to keep the game flowing smoothly for all teams.</p>
   </div>
 </div>
 
-<!-- âââ SLIDE 22 âââ -->
+<!-- ═══ SLIDE 22 ═══ -->
 <div class="slide" id="slide-22">
   <div class="slide-inner">
     <div class="slide-label">Slide 22</div>
-    <h1 class="slide-title" data-i18n="s22_title">ð¤ Code Of <span class="gold">Conduct</span></h1>
+    <h1 class="slide-title" data-i18n="s22_title">🤝 Code Of <span class="gold">Conduct</span></h1>
     <p class="slide-subtitle" data-i18n="s22_sub">This is a corporate event. Act accordingly.</p>
     <div class="card-grid card-grid-4" style="max-width:820px;">
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s22_c1t">Respectful</div><div class="card-text" data-i18n="s22_c1b">To locals, teammates, heritage sites, and organizers.</div></div>
-      <div class="card"><span class="card-icon">ð¡ï¸</span><div class="card-title" data-i18n="s22_c2t">Responsible</div><div class="card-text" data-i18n="s22_c2b">Own your actions. Be accountable for your team.</div></div>
-      <div class="card"><span class="card-icon">â ï¸</span><div class="card-title" data-i18n="s22_c3t">Safe</div><div class="card-text" data-i18n="s22_c3b">Safety first at all times. No exceptions.</div></div>
-      <div class="card"><span class="card-icon">ð¼</span><div class="card-title" data-i18n="s22_c4t">Professional</div><div class="card-text" data-i18n="s22_c4b">You represent your company. Maintain conduct.</div></div>
+      <div class="card"><span class="card-icon">🙏</span><div class="card-title" data-i18n="s22_c1t">Respectful</div><div class="card-text" data-i18n="s22_c1b">To locals, teammates, heritage sites, and organizers.</div></div>
+      <div class="card"><span class="card-icon">🛡️</span><div class="card-title" data-i18n="s22_c2t">Responsible</div><div class="card-text" data-i18n="s22_c2b">Own your actions. Be accountable for your team.</div></div>
+      <div class="card"><span class="card-icon">⚠️</span><div class="card-title" data-i18n="s22_c3t">Safe</div><div class="card-text" data-i18n="s22_c3b">Safety first at all times. No exceptions.</div></div>
+      <div class="card"><span class="card-icon">💼</span><div class="card-title" data-i18n="s22_c4t">Professional</div><div class="card-text" data-i18n="s22_c4b">You represent your company. Maintain conduct.</div></div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 23 âââ -->
+<!-- ═══ SLIDE 23 ═══ -->
 <div class="slide" id="slide-23">
   <div class="slide-inner" style="text-align:center;">
     <div class="slide-label">Slide 23</div>
     <h1 class="slide-title" data-i18n="s23_title">Today's <span class="gold">Journey</span></h1>
     <p class="slide-subtitle" data-i18n="s23_sub">Simple. Clear. Structured.</p>
     <div class="flow-bar">
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð</span><div class="flow-step-name" data-i18n="s23_f1">Briefing</div></div></div>
-      <div class="flow-arrow">â</div>
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð</span><div class="flow-step-name" data-i18n="s23_f2">Hunt</div></div></div>
-      <div class="flow-arrow">â</div>
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð¤</span><div class="flow-step-name" data-i18n="s23_f3">Submission</div></div></div>
-      <div class="flow-arrow">â</div>
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð½ï¸</span><div class="flow-step-name" data-i18n="s23_f4">Lunch</div></div></div>
-      <div class="flow-arrow">â</div>
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð¯</span><div class="flow-step-name" data-i18n="s23_f5">Indoor</div></div></div>
-      <div class="flow-arrow">â</div>
-      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">ð</span><div class="flow-step-name" data-i18n="s23_f6">Awards</div></div></div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">📋</span><div class="flow-step-name" data-i18n="s23_f1">Briefing</div></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">🏃</span><div class="flow-step-name" data-i18n="s23_f2">Hunt</div></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">📤</span><div class="flow-step-name" data-i18n="s23_f3">Submission</div></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">🍽️</span><div class="flow-step-name" data-i18n="s23_f4">Lunch</div></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">🎯</span><div class="flow-step-name" data-i18n="s23_f5">Indoor</div></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-step-inner"><span class="flow-step-icon">🏆</span><div class="flow-step-name" data-i18n="s23_f6">Awards</div></div></div>
     </div>
   </div>
 </div>
 
-<!-- âââ SLIDE 24 âââ -->
+<!-- ═══ SLIDE 24 ═══ -->
 <div class="slide" id="slide-24">
   <div class="slide-inner" style="text-align:center;">
-    <div class="slide-label">Slide 24 â Golden Rule</div>
+    <div class="slide-label">Slide 24 — Golden Rule</div>
     <h1 class="slide-title" data-i18n="s24_title">The Most Important <span class="gold">Rule</span></h1>
     <div class="priority-chain">
-      <div class="priority-pill p1" data-i18n="s24_p1">ð¡ï¸ Safety</div>
-      <div class="priority-arrow">âº</div>
-      <div class="priority-pill p2" data-i18n="s24_p2">ð Reputation</div>
-      <div class="priority-arrow">âº</div>
-      <div class="priority-pill p3" data-i18n="s24_p3">ð¤ Teamwork</div>
-      <div class="priority-arrow">âº</div>
-      <div class="priority-pill p4" data-i18n="s24_p4">ð Winning</div>
+      <div class="priority-pill p1" data-i18n="s24_p1">🛡️ Safety</div>
+      <div class="priority-arrow">›</div>
+      <div class="priority-pill p2" data-i18n="s24_p2">🏅 Reputation</div>
+      <div class="priority-arrow">›</div>
+      <div class="priority-pill p3" data-i18n="s24_p3">🤝 Teamwork</div>
+      <div class="priority-arrow">›</div>
+      <div class="priority-pill p4" data-i18n="s24_p4">🏆 Winning</div>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <div class="big-rule" style="flex:1;min-width:140px;"><div class="big-rule-text" data-i18n="s24_r1">If Unsafe â STOP</div></div>
-      <div class="big-rule" style="flex:1;min-width:140px;border-color:rgba(251,146,60,.5);background:rgba(251,146,60,.06);"><div style="font-family:'Cinzel',serif;font-size:17px;color:var(--orange);" data-i18n="s24_r2">If Unsure â ASK</div></div>
-      <div class="big-rule" style="flex:1;min-width:140px;border-color:rgba(96,165,250,.5);background:rgba(96,165,250,.06);"><div style="font-family:'Cinzel',serif;font-size:17px;color:var(--blue);" data-i18n="s24_r3">If Tired â REST</div></div>
+      <div class="big-rule" style="flex:1;min-width:140px;"><div class="big-rule-text" data-i18n="s24_r1">If Unsafe — STOP</div></div>
+      <div class="big-rule" style="flex:1;min-width:140px;border-color:rgba(251,146,60,.5);background:rgba(251,146,60,.06);"><div style="font-family:'Cinzel',serif;font-size:17px;color:var(--orange);" data-i18n="s24_r2">If Unsure — ASK</div></div>
+      <div class="big-rule" style="flex:1;min-width:140px;border-color:rgba(96,165,250,.5);background:rgba(96,165,250,.06);"><div style="font-family:'Cinzel',serif;font-size:17px;color:var(--blue);" data-i18n="s24_r3">If Tired — REST</div></div>
     </div>
     <p style="font-size:13px;color:var(--text-muted);max-width:460px;text-align:center;" data-i18n="s24_para">Winning means nothing if someone gets hurt.</p>
   </div>
 </div>
 
-<!-- âââ SLIDE 25 âââ -->
+<!-- ═══ SLIDE 25 ═══ -->
 <div class="slide" id="slide-25">
   <div class="slide-inner" style="text-align:center;">
     <div class="slide-label">Final</div>
-    <span style="font-size:60px;display:block;animation:float 4s ease-in-out infinite;margin-bottom:12px;">ð</span>
+    <span style="font-size:60px;display:block;animation:float 4s ease-in-out infinite;margin-bottom:12px;">🎉</span>
     <h1 class="slide-title" data-i18n="s25_title">The <span class="gold">Objective</span></h1>
     <div class="hero-ornament"></div>
     <div class="card-grid card-grid-4" style="max-width:740px;margin-top:13px;">
-      <div class="card"><span class="card-icon">ð</span><div class="card-title" data-i18n="s25_c1">Have Fun</div></div>
-      <div class="card"><span class="card-icon">ð¤</span><div class="card-title" data-i18n="s25_c2">Work Together</div></div>
-      <div class="card"><span class="card-icon">ðï¸</span><div class="card-title" data-i18n="s25_c3">Learn Klang</div></div>
-      <div class="card"><span class="card-icon">ð </span><div class="card-title" data-i18n="s25_c4">Return Safely</div></div>
+      <div class="card"><span class="card-icon">😄</span><div class="card-title" data-i18n="s25_c1">Have Fun</div></div>
+      <div class="card"><span class="card-icon">🤝</span><div class="card-title" data-i18n="s25_c2">Work Together</div></div>
+      <div class="card"><span class="card-icon">🏛️</span><div class="card-title" data-i18n="s25_c3">Learn Klang</div></div>
+      <div class="card"><span class="card-icon">🏠</span><div class="card-title" data-i18n="s25_c4">Return Safely</div></div>
     </div>
     <div class="big-success" style="margin-top:10px;">
       <div class="big-success-text" data-i18n="s25_rule">That Is A Successful Event.</div>
-      <p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s25_sub">Good luck, stay safe, and enjoy the Klang Heritage Bingo Hunt! ð</p>
+      <p style="font-size:13px;color:var(--text-muted);margin-top:6px;" data-i18n="s25_sub">Good luck, stay safe, and enjoy the Klang Heritage Bingo Hunt! 🏆</p>
     </div>
-    <!-- âââ EMERGENCY CONTACTS FOOTER â add/remove contact-card blocks to add more contacts âââ -->
+    <!-- ═══ EMERGENCY CONTACTS FOOTER — add/remove contact-card blocks to add more contacts ═══ -->
     <div style="margin-top:14px;width:100%;max-width:760px;">
-      <div style="font-size:9.5px;letter-spacing:2.5px;color:var(--red);font-weight:700;text-transform:uppercase;margin-bottom:10px;">ð Emergency Contacts</div>
+      <div style="font-size:9.5px;letter-spacing:2.5px;color:var(--red);font-weight:700;text-transform:uppercase;margin-bottom:10px;">🆘 Emergency Contacts</div>
       <div class="contact-row" style="flex-wrap:wrap;justify-content:center;gap:10px;">
-        <!-- CONTACT 1 â Bryan -->
+        <!-- CONTACT 1 — Bryan -->
         <div class="contact-card" style="min-width:170px;flex:0 1 auto;">
-          <div class="contact-avatar">ð¨âð¼</div>
+          <div class="contact-avatar">👨‍💼</div>
           <div class="contact-role">Game Master</div>
           <div class="contact-name">Bryan</div>
           <a class="contact-num" href="tel:+60126611043" style="font-size:15px;">012 661 1043</a>
-          <div class="contact-badges"><span class="badge-call">ð Call</span><span class="badge-wa">ð¬ WhatsApp</span></div>
+          <div class="contact-badges"><span class="badge-call">📞 Call</span><span class="badge-wa">💬 WhatsApp</span></div>
         </div>
-        <!-- CONTACT 2 â Sebastian -->
+        <!-- CONTACT 2 — Sebastian -->
         <div class="contact-card" style="min-width:170px;flex:0 1 auto;">
-          <div class="contact-avatar">ð¡ï¸</div>
+          <div class="contact-avatar">🛡️</div>
           <div class="contact-role">Safety Officer</div>
           <div class="contact-name">Sebastian</div>
           <a class="contact-num" href="tel:+60126365787" style="font-size:15px;">012-636 5787</a>
-          <div class="contact-badges"><span class="badge-call">ð Call</span></div>
+          <div class="contact-badges"><span class="badge-call">📞 Call</span></div>
         </div>
-        <!-- CONTACT 3 â Fire &amp; Rescue -->
+        <!-- CONTACT 3 — Fire &amp; Rescue -->
         <div class="contact-card" style="min-width:170px;flex:0 1 auto;border-color:rgba(251,146,60,.35);">
-          <div class="contact-avatar">ð</div>
+          <div class="contact-avatar">🚒</div>
           <div class="contact-role" style="color:var(--orange);">Emergency Services</div>
           <div class="contact-name">Fire &amp; Rescue</div>
           <a class="contact-num" href="tel:999" style="font-size:22px;color:var(--orange);">999</a>
-          <div class="contact-badges"><span class="badge-call" style="background:rgba(251,146,60,.15);border-color:rgba(251,146,60,.4);color:var(--orange);">ð Emergency</span></div>
+          <div class="contact-badges"><span class="badge-call" style="background:rgba(251,146,60,.15);border-color:rgba(251,146,60,.4);color:var(--orange);">📞 Emergency</span></div>
         </div>
-        <!-- ââ TO ADD MORE CONTACTS: Copy one contact-card block above and paste here ââ -->
+        <!-- ══ TO ADD MORE CONTACTS: Copy one contact-card block above and paste here ══ -->
       </div>
     </div>
-    <!-- âââ END EMERGENCY CONTACTS âââ -->
+    <!-- ═══ END EMERGENCY CONTACTS ═══ -->
   </div>
 </div>
 
-<!-- âââ SLIDE 26 â GATHERING POINT âââ -->
+<!-- ═══ SLIDE 26 — GATHERING POINT ═══ -->
 <!-- TO ADD MORE SLIDES: Copy this entire slide block, change id="slide-26" to id="slide-27", update content, and remember to change total=26 to total=27 in the script below -->
 <div class="slide" id="slide-26">
   <div class="slide-inner">
-    <div class="slide-label">Slide 26 â Logistics</div>
-    <h1 class="slide-title">ð <span class="gold">Gathering</span> Point</h1>
-    <p class="slide-subtitle">Assembly area for flag-off â Right outside Wan Hai Office, around the corner</p>
+    <div class="slide-label">Slide 26 — Logistics</div>
+    <h1 class="slide-title">📍 <span class="gold">Gathering</span> Point</h1>
+    <p class="slide-subtitle">Assembly area for flag-off — Right outside Wan Hai Office, around the corner</p>
 
     <!-- PARKING PHOTO GRID -->
-    <!-- ââ TO ADD PHOTOS: Upload your images to GitHub repo (e.g. images/parking1.jpg) and replace the src="" below ââ -->
+    <!-- ══ TO ADD PHOTOS: Upload your images to GitHub repo (e.g. images/parking1.jpg) and replace the src="" below ══ -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:860px;margin-top:4px;">
       <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
         <!-- Replace src="" with your image path e.g. src="images/gather1.jpg" -->
-        <img src="parking_0.jpg" alt="Gathering Point â Parking Entrance" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        <img src="parking_0.jpg" alt="Gathering Point — Parking Entrance" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
         <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
-          <span style="font-size:28px;">ð¿ï¸</span>
+          <span style="font-size:28px;">🅿️</span>
           <span style="font-size:11px;letter-spacing:1px;">Parking Entrance</span>
           <span style="font-size:9px;opacity:.5;">ime2 Cashless Parking</span>
         </div>
       </div>
       <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-        <img src="parking_1.jpg" alt="Gathering Point â Parking Bay" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        <img src="parking_1.jpg" alt="Gathering Point — Parking Bay" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
         <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
-          <span style="font-size:28px;">ð</span>
+          <span style="font-size:28px;">🚗</span>
           <span style="font-size:11px;letter-spacing:1px;">Parking Bay</span>
           <span style="font-size:9px;opacity:.5;">Yellow-marked bays</span>
         </div>
       </div>
       <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-        <img src="parking_2.jpg" alt="Gathering Point â Assembly Area" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        <img src="parking_2.jpg" alt="Gathering Point — Assembly Area" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
         <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
-          <span style="font-size:28px;">ð</span>
+          <span style="font-size:28px;">📍</span>
           <span style="font-size:11px;letter-spacing:1px;">Assembly Area</span>
           <span style="font-size:9px;opacity:.5;">Near Wan Hai Office</span>
         </div>
       </div>
       <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,55,.2);background:var(--bg-card);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-        <img src="parking_3.jpg" alt="Gathering Point â Flag Off Location" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        <img src="parking_3.jpg" alt="Gathering Point — Flag Off Location" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;display:block;"/>
         <div style="display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted);">
-          <span style="font-size:28px;">ð</span>
+          <span style="font-size:28px;">🏁</span>
           <span style="font-size:11px;letter-spacing:1px;">Flag-Off Point</span>
           <span style="font-size:9px;opacity:.5;">Start &amp; Finish here</span>
         </div>
@@ -753,138 +753,138 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
     <!-- LOGISTICS CARDS -->
     <div class="card-grid card-grid-3" style="max-width:760px;margin-top:8px;">
       <div class="card">
-        <span class="card-icon">ð</span>
+        <span class="card-icon">🕗</span>
         <div class="card-title">Arrival Time</div>
         <div class="card-text">Please arrive <strong style="color:var(--gold);">15 minutes early</strong> before flag-off</div>
       </div>
       <div class="card">
-        <span class="card-icon">ð¿ï¸</span>
+        <span class="card-icon">🅿️</span>
         <div class="card-title">Parking</div>
-        <div class="card-text">Park at <strong style="color:var(--gold);">Times Parking</strong> â use ime2 app for cashless payment</div>
+        <div class="card-text">Park at <strong style="color:var(--gold);">Times Parking</strong> — use ime2 app for cashless payment</div>
       </div>
       <div class="card">
-        <span class="card-icon">ð</span>
+        <span class="card-icon">🔄</span>
         <div class="card-title">Return Here</div>
         <div class="card-text">All teams return to this same point at end of hunt</div>
       </div>
     </div>
 
-    <div class="big-rule"><div class="big-rule-text">ð Flag Off From This Location</div></div>
+    <div class="big-rule"><div class="big-rule-text">🏁 Flag Off From This Location</div></div>
   </div>
 </div>
-<!-- ââ END SLIDE 26 ââ -->
+<!-- ══ END SLIDE 26 ══ -->
 
 </div><!-- /slides-container -->
 <div id="nav-dots"></div>
 
 <script>
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 //  TRANSLATIONS
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 const T = {
 en:{
   s1_label:'Safety &amp; Game Briefing',s1_title:'KLANG HERITAGE<br/>BINGO HUNT',
-  s1_tagline:'<span class="hero-tag-word">Explore</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Learn</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Compete</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Return Safely</span>',
-  s1_tag1:'ð Klang Heritage Locations',s1_tag2:'ð¯ 25 Challenges',s1_tag3:'ð Points + Bingo Bonus',
+  s1_tagline:'<span class="hero-tag-word">Explore</span> &nbsp;•&nbsp; <span class="hero-tag-word">Learn</span> &nbsp;•&nbsp; <span class="hero-tag-word">Compete</span> &nbsp;•&nbsp; <span class="hero-tag-word">Return Safely</span>',
+  s1_tag1:'📍 Klang Heritage Locations',s1_tag2:'🎯 25 Challenges',s1_tag3:'🏅 Points + Bingo Bonus',
   s2_title:'Your <span class="gold">Mission</span>',s2_sub:'Complete bingo challenges around Klang heritage locations to earn points.',
   s2_c1t:'Complete Tasks',s2_c1b:'Every completed challenge earns your team points toward the final score.',
   s2_c2t:'Hit Bingo Lines',s2_c2b:'Complete a row, column, or diagonal for bonus points on top of task scores.',
   s2_c3t:'Highest Score Wins',s2_c3b:'The team with the most total points at the end takes the championship.',
-  s2_rule:'â ï¸ Safety &gt; Speed â Always',s2_rule_sub:'Rule #1: No task is worth risking injury.',
-  s3_title:'How The <span class="gold">Bingo</span> Works',s3_sub:'Click any cell to mark it complete â watch your score and lines build up',
-  s3_score_hdr:'ð Live Scoreboard',s3_tasks_lbl:'â Tasks Done',s3_tpts_lbl:'ð¯ Task Points',
-  s3_lines_lbl:'â­ Lines Hit',s3_bonus_lbl:'ð Line Bonus',s3_full_lbl:'ð Full Card Bonus',
+  s2_rule:'⚠️ Safety &gt; Speed — Always',s2_rule_sub:'Rule #1: No task is worth risking injury.',
+  s3_title:'How The <span class="gold">Bingo</span> Works',s3_sub:'Click any cell to mark it complete — watch your score and lines build up',
+  s3_score_hdr:'📊 Live Scoreboard',s3_tasks_lbl:'✅ Tasks Done',s3_tpts_lbl:'🎯 Task Points',
+  s3_lines_lbl:'⭐ Lines Hit',s3_bonus_lbl:'🎁 Line Bonus',s3_full_lbl:'💎 Full Card Bonus',
   s3_total_lbl:'TOTAL SCORE',s3_line_tracker:'BINGO LINES COMPLETED (100 pts each)',
-  s3_fullcard:'ð FULL CARD! +500 BONUS PTS',s3_reset:'âº RESET BOARD',
-  s4_title:'Read <span class="gold">Clues</span> Carefully',s4_sub:'Every clue matters â understand before you move.',
-  s4_col1_title:'ð Task Requirements',s4_col2_title:'ð§  Be Creative With Proof',
-  s4_i1:'<strong>ENTIRE TEAM</strong> required â all appear in photo',
-  s4_i2:'<strong>MINIMUM MEMBERS</strong> stated â comply exactly',
-  s4_i3:'<strong>1 REP</strong> â just one person needed',
-  s4_i4:'If NOT stated â divide &amp; conquer freely',
+  s3_fullcard:'🏆 FULL CARD! +500 BONUS PTS',s3_reset:'↺ RESET BOARD',
+  s4_title:'Read <span class="gold">Clues</span> Carefully',s4_sub:'Every clue matters — understand before you move.',
+  s4_col1_title:'📋 Task Requirements',s4_col2_title:'🧠 Be Creative With Proof',
+  s4_i1:'<strong>ENTIRE TEAM</strong> required — all appear in photo',
+  s4_i2:'<strong>MINIMUM MEMBERS</strong> stated — comply exactly',
+  s4_i3:'<strong>1 REP</strong> — just one person needed',
+  s4_i4:'If NOT stated — divide &amp; conquer freely',
   s4_i5:'Use video call screenshots',s4_i6:'Use reflections (glass/mirror)',
   s4_i7:'Creative positioning works',s4_i8:'Team props or identifiers',s4_i9:'Plan ahead and regroup',
-  s4_rule:'All members must be represented â how you achieve it is your strategy.',
+  s4_rule:'All members must be represented — how you achieve it is your strategy.',
   s5_title:'Creativity <span class="gold">Wins</span> Points',
-  s5_a_title:'â Allowed',s5_a1:'Creative poses',s5_a2:'Acting scenes',s5_a3:'Storytelling photos',s5_a4:'Artistic compositions',
-  s5_f_title:'ð« Not Allowed',s5_f1:'Blocking walkways',s5_f2:'Disturbing the public',s5_f3:'Entering restricted areas',s5_f4:'Climbing unsafe structures',
-  s5_rule:'ð Golden Rule: Be Creative Without Being Disruptive',
-  s6_title:'ð Driving <span class="gold">Safety</span>',
-  s6_a_title:'â Drivers Must',s6_a1:'Follow all traffic laws',s6_a2:'No speeding',s6_a3:'No racing other teams',s6_a4:'No dangerous shortcuts',
-  s6_f_title:'ð« Strictly Prohibited',s6_f1:'Using phone while driving',s6_f2:'Double parking',s6_f3:'Illegal U-turns',s6_f4:'Dangerous stops',
-  s6_rule:'ð This Is NOT A Road Race',s6_rule_sub:'Penalty may be given for unsafe behaviour on the road.',
+  s5_a_title:'✅ Allowed',s5_a1:'Creative poses',s5_a2:'Acting scenes',s5_a3:'Storytelling photos',s5_a4:'Artistic compositions',
+  s5_f_title:'🚫 Not Allowed',s5_f1:'Blocking walkways',s5_f2:'Disturbing the public',s5_f3:'Entering restricted areas',s5_f4:'Climbing unsafe structures',
+  s5_rule:'🌟 Golden Rule: Be Creative Without Being Disruptive',
+  s6_title:'🚗 Driving <span class="gold">Safety</span>',
+  s6_a_title:'✅ Drivers Must',s6_a1:'Follow all traffic laws',s6_a2:'No speeding',s6_a3:'No racing other teams',s6_a4:'No dangerous shortcuts',
+  s6_f_title:'🚫 Strictly Prohibited',s6_f1:'Using phone while driving',s6_f2:'Double parking',s6_f3:'Illegal U-turns',s6_f4:'Dangerous stops',
+  s6_rule:'🛑 This Is NOT A Road Race',s6_rule_sub:'Penalty may be given for unsafe behaviour on the road.',
   s7_title:'Respect <span class="gold">Public</span> Space',
-  s7_a_title:'â Always',s7_a1:'Park legally',s7_a2:'Use proper parking lots',s7_a3:'Respect shop owners',s7_a4:'Keep pathways clear',
-  s7_f_title:'ð« Do NOT',s7_f1:'Litter anywhere',s7_f2:'Move public property',s7_f3:'Touch shop items without permission',s7_f4:'Disturb locals',
+  s7_a_title:'✅ Always',s7_a1:'Park legally',s7_a2:'Use proper parking lots',s7_a3:'Respect shop owners',s7_a4:'Keep pathways clear',
+  s7_f_title:'🚫 Do NOT',s7_f1:'Litter anywhere',s7_f2:'Move public property',s7_f3:'Touch shop items without permission',s7_f4:'Disturb locals',
   s7_c1:'Your Company',s7_c2:'The Organizer',s7_c3:'Yourself',s7_note:'You represent all three. Act professionally.',
-  s8_title:'â ï¸ Safety <span class="gold">Awareness</span>',
+  s8_title:'⚠️ Safety <span class="gold">Awareness</span>',
   s8_c1t:'Road Crossing',s8_c1b:'Always use pedestrian crossings. Watch for traffic.',
   s8_c2t:'Heat Exhaustion',s8_c2b:'Stay hydrated. Rest in shade. Report if unwell.',
   s8_c3t:'Dehydration',s8_c3b:'Drink water consistently throughout the day.',
   s8_c4t:'Construction Areas',s8_c4b:'Avoid all construction zones. Do not enter.',
   s8_c5t:'Slippery Surfaces',s8_c5b:'Walk carefully on wet or uneven surfaces.',
   s8_c6t:'Help Teammates',s8_c6b:'Look out for each other. No one left behind.',
-  s8_rule:'Move Fast In Thinking â Slow In Movement',
-  s9_title:'ð Language <span class="gold">Support</span>',s9_sub:'All clues available in 3 languages',
-  s9_bm:'Bahasa Malaysia',s9_zh:'Chinese',s9_zh_sub:'ä¸­æ',
-  s9_tip:'ð¡ Switch language at top of the system',s9_tip2:'Choose the language your team understands best.',
-  s10_title:'ð What To <span class="gold">Wear</span>',
-  s10_a_title:'â Recommended',s10_a1:'Comfortable clothing',s10_a2:'Sports or walking shoes',s10_a3:'Light breathable clothes',
-  s10_f_title:'ð« Avoid',s10_f1:'Slippers or sandals',s10_f2:'Formal shoes',s10_f3:'Heavy bags',s10_f4:'Restrictive clothing',
+  s8_rule:'Move Fast In Thinking — Slow In Movement',
+  s9_title:'🌐 Language <span class="gold">Support</span>',s9_sub:'All clues available in 3 languages',
+  s9_bm:'Bahasa Malaysia',s9_zh:'Chinese',s9_zh_sub:'中文',
+  s9_tip:'💡 Switch language at top of the system',s9_tip2:'Choose the language your team understands best.',
+  s10_title:'👕 What To <span class="gold">Wear</span>',
+  s10_a_title:'✅ Recommended',s10_a1:'Comfortable clothing',s10_a2:'Sports or walking shoes',s10_a3:'Light breathable clothes',
+  s10_f_title:'🚫 Avoid',s10_f1:'Slippers or sandals',s10_f2:'Formal shoes',s10_f3:'Heavy bags',s10_f4:'Restrictive clothing',
   s10_c1t:'Cap',s10_c1b:'Protect from sun exposure',s10_c2t:'Sunglasses',s10_c2b:'Eye protection outdoors',s10_c3t:'Sunscreen',s10_c3b:'Apply before you start',
-  s11_title:'ð What To <span class="gold">Bring</span>',
+  s11_title:'🎒 What To <span class="gold">Bring</span>',
   s11_c1t:'Charged Phone',s11_c1b:'Fully charged. Team phone with internet access required.',
   s11_c2t:'Power Bank',s11_c2b:'Keep your phone alive throughout the full day.',
   s11_c3t:'Water Bottle',s11_c3b:'Stay hydrated. Essential for a full day outdoor event.',
   s11_c4t:'Small Cash',s11_c4b:'For unexpected needs, parking, or small purchases.',
-  s11_c5t:'Umbrella',s11_c5b:'Optional â useful if weather changes.',
+  s11_c5t:'Umbrella',s11_c5b:'Optional — useful if weather changes.',
   s11_c6t:'Snacks',s11_c6b:'Optional. Keep energy up between activities.',
-  s12_title:'ð¬ WhatsApp <span class="gold">Group Setup</span>',s12_sub:'Each team MUST create a WhatsApp group before start',
-  s12_c1_title:'ð² Include In Group',s12_i1:'All team members',s12_i2:'Facilitator contact',s12_i3:'Emergency contact number',
-  s12_c2_title:'ð¯ Group Purpose',s12_i4:'Team coordination',s12_i5:'Emergency communication',s12_i6:'Task clarifications',s12_i7:'Submission backup',
-  s12_rule:'â° Do This Before The Hunt Starts',
-  s13_title:'ð Emergency <span class="gold">Contact</span>',
+  s12_title:'💬 WhatsApp <span class="gold">Group Setup</span>',s12_sub:'Each team MUST create a WhatsApp group before start',
+  s12_c1_title:'📲 Include In Group',s12_i1:'All team members',s12_i2:'Facilitator contact',s12_i3:'Emergency contact number',
+  s12_c2_title:'🎯 Group Purpose',s12_i4:'Team coordination',s12_i5:'Emergency communication',s12_i6:'Task clarifications',s12_i7:'Submission backup',
+  s12_rule:'⏰ Do This Before The Hunt Starts',
+  s13_title:'🆘 Emergency <span class="gold">Contact</span>',
   s13_bryan_role:'Game Master',s13_seb_role:'Safety Officer',
-  s13_call:'ð Call',s13_wa:'ð¬ WhatsApp',s13_call2:'ð Call',
+  s13_call:'📞 Call',s13_wa:'💬 WhatsApp',s13_call2:'📞 Call',
   s13_c1:'Injury',s13_c2:'Lost Participant',s13_c3:'Vehicle Issue',s13_c4:'Heat Exhaustion',
-  s13_rule:'Report Early â Not Late',
-  s14_title:'âï¸ Play <span class="gold">Fair</span>',
-  s14_f_title:'ð« Do NOT',s14_f1:'Cheat in any form',s14_f2:'Submit fake or staged evidence',s14_f3:'Use old or recycled photos',s14_f4:"Copy other teams' submissions",
-  s14_w_title:'â ï¸ Violations May Cause',s14_w1:'Point deduction',s14_w2:'Task disqualification',s14_w3:'Full team penalty',
-  s14_rule:'ð Integrity Matters More Than Winning',
-  s15_title:'â±ï¸ Time <span class="gold">Management</span>',
-  s15_a_title:'â Smart Teams',s15_a1:'Plan the route first',s15_a2:'Assign clear roles',s15_a3:'Prioritize high-value tasks',s15_a4:'Track time constantly',
-  s15_f_title:'â Losing Teams',s15_f1:'Random running around',s15_f2:'No internal communication',s15_f3:'No plan or strategy',s15_f4:'Wasting time on low scores',
-  s15_rule:'ð§  Strategy Wins More Than Speed',
-  s16_title:'ðï¸ Respect <span class="gold">Heritage Sites</span>',s16_sub:'These are real historical locations. Treat them like museums.',
-  s16_r1:'Do <strong>NOT</strong> climb monuments or heritage structures â even for a photo',
+  s13_rule:'Report Early — Not Late',
+  s14_title:'⚖️ Play <span class="gold">Fair</span>',
+  s14_f_title:'🚫 Do NOT',s14_f1:'Cheat in any form',s14_f2:'Submit fake or staged evidence',s14_f3:'Use old or recycled photos',s14_f4:"Copy other teams' submissions",
+  s14_w_title:'⚠️ Violations May Cause',s14_w1:'Point deduction',s14_w2:'Task disqualification',s14_w3:'Full team penalty',
+  s14_rule:'🏅 Integrity Matters More Than Winning',
+  s15_title:'⏱️ Time <span class="gold">Management</span>',
+  s15_a_title:'✅ Smart Teams',s15_a1:'Plan the route first',s15_a2:'Assign clear roles',s15_a3:'Prioritize high-value tasks',s15_a4:'Track time constantly',
+  s15_f_title:'❌ Losing Teams',s15_f1:'Random running around',s15_f2:'No internal communication',s15_f3:'No plan or strategy',s15_f4:'Wasting time on low scores',
+  s15_rule:'🧠 Strategy Wins More Than Speed',
+  s16_title:'🏛️ Respect <span class="gold">Heritage Sites</span>',s16_sub:'These are real historical locations. Treat them like museums.',
+  s16_r1:'Do <strong>NOT</strong> climb monuments or heritage structures — even for a photo',
   s16_r2:'Do <strong>NOT</strong> sit on or lean against heritage structures',
   s16_r3:'Do <strong>NOT</strong> touch fragile items or artifacts',
   s16_r4:'Do <strong>NOT</strong> damage, mark, or deface murals and walls',
   s16_rule:"These Places Are Part Of Malaysia's History.",
-  s17_title:'ð¤ Submission <span class="gold">Rules</span>',
-  s17_r1:'Submit the <strong>correct photo</strong> â clear, readable, matching the task',
+  s17_title:'📤 Submission <span class="gold">Rules</span>',
+  s17_r1:'Submit the <strong>correct photo</strong> — clear, readable, matching the task',
   s17_r2:'Photo must show <strong>clear proof</strong> of task completion',
   s17_r3:'Ensure it is the <strong>right task</strong> box you are completing',
   s17_r4:'Include the <strong>right team members</strong> as required by the clue',
-  s17_r5:'<strong>Late submission penalty</strong> may apply â submit on time',
-  s17_r6:'<strong>Team Captain</strong> submits only â one submission per task',
-  s18_title:'â ï¸ Penalty <span class="gold">System</span>',s18_th1:'Violation',s18_th2:'Consequence',
-  s18_v1:'ð¨ Unsafe Behaviour',s18_p1:'-50 pts',s18_v2:'â° Late Submission',s18_p2:'-20 pts',
-  s18_v3:'ð¿ï¸ Illegal Parking',s18_p3:'-50 pts',s18_v4:'â Fake Submission',s18_p4:'DISQUALIFIED',
+  s17_r5:'<strong>Late submission penalty</strong> may apply — submit on time',
+  s17_r6:'<strong>Team Captain</strong> submits only — one submission per task',
+  s18_title:'⚠️ Penalty <span class="gold">System</span>',s18_th1:'Violation',s18_th2:'Consequence',
+  s18_v1:'🚨 Unsafe Behaviour',s18_p1:'-50 pts',s18_v2:'⏰ Late Submission',s18_p2:'-20 pts',
+  s18_v3:'🅿️ Illegal Parking',s18_p3:'-50 pts',s18_v4:'❌ Fake Submission',s18_p4:'DISQUALIFIED',
   s18_rule:"Don't Let A Shortcut Cost You The Game",
-  s19_title:'ð§ï¸ Weather <span class="gold">Protocol</span>',
-  s19_r_title:'ð§ï¸ If Heavy Rain',s19_r1:'Pause activity immediately',s19_r2:'Move to safe shelter',s19_r3:'Await organizer instructions',
-  s19_h_title:'âï¸ If Extreme Heat',s19_h1:'Hydrate immediately',s19_h2:'Rest in shade',s19_h3:'Inform facilitator if unwell',
-  s19_rule:'ðï¸ Organizer May Adjust Game Timing For Safety',
-  s20_title:'ð If Problems <span class="gold">Occur</span>',
+  s19_title:'🌧️ Weather <span class="gold">Protocol</span>',
+  s19_r_title:'🌧️ If Heavy Rain',s19_r1:'Pause activity immediately',s19_r2:'Move to safe shelter',s19_r3:'Await organizer instructions',
+  s19_h_title:'☀️ If Extreme Heat',s19_h1:'Hydrate immediately',s19_h2:'Rest in shade',s19_h3:'Inform facilitator if unwell',
+  s19_rule:'🗓️ Organizer May Adjust Game Timing For Safety',
+  s20_title:'🆘 If Problems <span class="gold">Occur</span>',
   s20_c1t:'Team Gets Lost',s20_c1b:'Contact facilitator immediately via WhatsApp or call.',
   s20_c2t:'Phone Dies',s20_c2b:'Return to nearest checkpoint right away.',
   s20_c3t:'Vehicle Breakdown',s20_c3b:'Inform organizer immediately. Stay safe and off road.',
-  s20_rule:'ð Never Disappear Without Informing',
-  s21_title:'ðï¸ Scoring <span class="gold">Disputes</span>',s21_rule:'Game Master Decision Is Final',
+  s20_rule:'🔕 Never Disappear Without Informing',
+  s21_title:'🏛️ Scoring <span class="gold">Disputes</span>',s21_rule:'Game Master Decision Is Final',
   s21_para:'Respect decisions to keep the game flowing smoothly for all teams.',
-  s22_title:'ð¤ Code Of <span class="gold">Conduct</span>',s22_sub:'This is a corporate event. Act accordingly.',
+  s22_title:'🤝 Code Of <span class="gold">Conduct</span>',s22_sub:'This is a corporate event. Act accordingly.',
   s22_c1t:'Respectful',s22_c1b:'To locals, teammates, heritage sites, and organizers.',
   s22_c2t:'Responsible',s22_c2b:'Own your actions. Be accountable for your team.',
   s22_c3t:'Safe',s22_c3b:'Safety first at all times. No exceptions.',
@@ -892,116 +892,116 @@ en:{
   s23_title:"Today's <span class=\"gold\">Journey</span>",s23_sub:'Simple. Clear. Structured.',
   s23_f1:'Briefing',s23_f2:'Hunt',s23_f3:'Submission',s23_f4:'Lunch',s23_f5:'Indoor',s23_f6:'Awards',
   s24_title:'The Most Important <span class="gold">Rule</span>',
-  s24_p1:'ð¡ï¸ Safety',s24_p2:'ð Reputation',s24_p3:'ð¤ Teamwork',s24_p4:'ð Winning',
-  s24_r1:'If Unsafe â STOP',s24_r2:'If Unsure â ASK',s24_r3:'If Tired â REST',
+  s24_p1:'🛡️ Safety',s24_p2:'🏅 Reputation',s24_p3:'🤝 Teamwork',s24_p4:'🏆 Winning',
+  s24_r1:'If Unsafe — STOP',s24_r2:'If Unsure — ASK',s24_r3:'If Tired — REST',
   s24_para:'Winning means nothing if someone gets hurt.',
   s25_title:'The <span class="gold">Objective</span>',
   s25_c1:'Have Fun',s25_c2:'Work Together',s25_c3:'Learn Klang',s25_c4:'Return Safely',
-  s25_rule:'That Is A Successful Event.',s25_sub:'Good luck, stay safe, and enjoy the Klang Heritage Bingo Hunt! ð'
+  s25_rule:'That Is A Successful Event.',s25_sub:'Good luck, stay safe, and enjoy the Klang Heritage Bingo Hunt! 🏆'
 },
 bm:{
   s1_label:'Taklimat Keselamatan &amp; Permainan',s1_title:'PERBURU BINGO<br/>WARISAN KLANG',
-  s1_tagline:'<span class="hero-tag-word">Eksplorasi</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Belajar</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Bersaing</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">Pulang Selamat</span>',
-  s1_tag1:'ð Lokasi Warisan Klang',s1_tag2:'ð¯ 25 Cabaran',s1_tag3:'ð Mata + Bonus Bingo',
+  s1_tagline:'<span class="hero-tag-word">Eksplorasi</span> &nbsp;•&nbsp; <span class="hero-tag-word">Belajar</span> &nbsp;•&nbsp; <span class="hero-tag-word">Bersaing</span> &nbsp;•&nbsp; <span class="hero-tag-word">Pulang Selamat</span>',
+  s1_tag1:'📍 Lokasi Warisan Klang',s1_tag2:'🎯 25 Cabaran',s1_tag3:'🏅 Mata + Bonus Bingo',
   s2_title:'Misi <span class="gold">Anda</span>',s2_sub:'Lengkapkan cabaran bingo di sekitar lokasi warisan Klang untuk mendapat mata.',
   s2_c1t:'Lengkapkan Tugasan',s2_c1b:'Setiap cabaran yang diselesaikan memperoleh mata untuk pasukan anda.',
   s2_c2t:'Capai Baris Bingo',s2_c2b:'Lengkapkan baris, lajur, atau pepenjuru untuk mata bonus tambahan.',
   s2_c3t:'Skor Tertinggi Menang',s2_c3b:'Pasukan dengan jumlah mata terbanyak di akhir permainan memenangi kejohanan.',
-  s2_rule:'â ï¸ Keselamatan &gt; Kelajuan â Sentiasa',s2_rule_sub:'Peraturan #1: Tiada tugasan yang berbaloi dengan risiko kecederaan.',
-  s3_title:'Cara <span class="gold">Bingo</span> Berfungsi',s3_sub:'Klik mana-mana sel untuk menandakannya â lihat mata dan baris anda bertambah',
-  s3_score_hdr:'ð Papan Mata Langsung',s3_tasks_lbl:'â Tugasan Siap',s3_tpts_lbl:'ð¯ Mata Tugasan',
-  s3_lines_lbl:'â­ Baris Capai',s3_bonus_lbl:'ð Bonus Baris',s3_full_lbl:'ð Bonus Kad Penuh',
+  s2_rule:'⚠️ Keselamatan &gt; Kelajuan — Sentiasa',s2_rule_sub:'Peraturan #1: Tiada tugasan yang berbaloi dengan risiko kecederaan.',
+  s3_title:'Cara <span class="gold">Bingo</span> Berfungsi',s3_sub:'Klik mana-mana sel untuk menandakannya — lihat mata dan baris anda bertambah',
+  s3_score_hdr:'📊 Papan Mata Langsung',s3_tasks_lbl:'✅ Tugasan Siap',s3_tpts_lbl:'🎯 Mata Tugasan',
+  s3_lines_lbl:'⭐ Baris Capai',s3_bonus_lbl:'🎁 Bonus Baris',s3_full_lbl:'💎 Bonus Kad Penuh',
   s3_total_lbl:'JUMLAH MATA',s3_line_tracker:'BARIS BINGO DICAPAI (100 mata setiap satu)',
-  s3_fullcard:'ð KAD PENUH! +500 MATA BONUS',s3_reset:'âº MULAKAN SEMULA',
-  s4_title:'Baca <span class="gold">Petunjuk</span> Dengan Teliti',s4_sub:'Setiap petunjuk penting â faham sebelum bergerak.',
-  s4_col1_title:'ð Keperluan Tugasan',s4_col2_title:'ð§  Jadilah Kreatif Dengan Bukti',
-  s4_i1:'<strong>SELURUH PASUKAN</strong> diperlukan â semua muncul dalam foto',
-  s4_i2:'<strong>BILANGAN MINIMUM</strong> dinyatakan â patuhi dengan tepat',
-  s4_i3:'<strong>1 WAKIL</strong> â hanya satu orang diperlukan',
-  s4_i4:'Jika TIDAK dinyatakan â bahagikan &amp; takluk bebas',
+  s3_fullcard:'🏆 KAD PENUH! +500 MATA BONUS',s3_reset:'↺ MULAKAN SEMULA',
+  s4_title:'Baca <span class="gold">Petunjuk</span> Dengan Teliti',s4_sub:'Setiap petunjuk penting — faham sebelum bergerak.',
+  s4_col1_title:'📋 Keperluan Tugasan',s4_col2_title:'🧠 Jadilah Kreatif Dengan Bukti',
+  s4_i1:'<strong>SELURUH PASUKAN</strong> diperlukan — semua muncul dalam foto',
+  s4_i2:'<strong>BILANGAN MINIMUM</strong> dinyatakan — patuhi dengan tepat',
+  s4_i3:'<strong>1 WAKIL</strong> — hanya satu orang diperlukan',
+  s4_i4:'Jika TIDAK dinyatakan — bahagikan &amp; takluk bebas',
   s4_i5:'Gunakan tangkapan skrin panggilan video',s4_i6:'Gunakan refleksi (kaca/cermin)',
   s4_i7:'Kedudukan kreatif berkesan',s4_i8:'Alat pasukan atau pengenal',s4_i9:'Rancang awal dan kumpul semula',
-  s4_rule:'Semua ahli mesti diwakili â cara mencapainya adalah strategi anda.',
+  s4_rule:'Semua ahli mesti diwakili — cara mencapainya adalah strategi anda.',
   s5_title:'Kreativiti <span class="gold">Mendapat</span> Mata',
-  s5_a_title:'â Dibenarkan',s5_a1:'Postur kreatif',s5_a2:'Adegan lakonan',s5_a3:'Foto bercerita',s5_a4:'Komposisi artistik',
-  s5_f_title:'ð« Tidak Dibenarkan',s5_f1:'Menyekat laluan',s5_f2:'Mengganggu orang ramai',s5_f3:'Memasuki kawasan larangan',s5_f4:'Memanjat struktur tidak selamat',
-  s5_rule:'ð Peraturan Emas: Jadilah Kreatif Tanpa Mengganggu',
-  s6_title:'ð Keselamatan <span class="gold">Memandu</span>',
-  s6_a_title:'â Pemandu Mesti',s6_a1:'Ikuti semua undang-undang lalu lintas',s6_a2:'Tiada melebihi had laju',s6_a3:'Tiada lumba dengan pasukan lain',s6_a4:'Tiada jalan pintas berbahaya',
-  s6_f_title:'ð« Dilarang Sama Sekali',s6_f1:'Menggunakan telefon semasa memandu',s6_f2:'Meletak kenderaan berganda',s6_f3:'Pusing balik haram',s6_f4:'Berhenti berbahaya',
-  s6_rule:'ð Ini BUKAN Perlumbaan Di Jalan Raya',s6_rule_sub:'Penalti boleh diberikan untuk tingkah laku tidak selamat.',
+  s5_a_title:'✅ Dibenarkan',s5_a1:'Postur kreatif',s5_a2:'Adegan lakonan',s5_a3:'Foto bercerita',s5_a4:'Komposisi artistik',
+  s5_f_title:'🚫 Tidak Dibenarkan',s5_f1:'Menyekat laluan',s5_f2:'Mengganggu orang ramai',s5_f3:'Memasuki kawasan larangan',s5_f4:'Memanjat struktur tidak selamat',
+  s5_rule:'🌟 Peraturan Emas: Jadilah Kreatif Tanpa Mengganggu',
+  s6_title:'🚗 Keselamatan <span class="gold">Memandu</span>',
+  s6_a_title:'✅ Pemandu Mesti',s6_a1:'Ikuti semua undang-undang lalu lintas',s6_a2:'Tiada melebihi had laju',s6_a3:'Tiada lumba dengan pasukan lain',s6_a4:'Tiada jalan pintas berbahaya',
+  s6_f_title:'🚫 Dilarang Sama Sekali',s6_f1:'Menggunakan telefon semasa memandu',s6_f2:'Meletak kenderaan berganda',s6_f3:'Pusing balik haram',s6_f4:'Berhenti berbahaya',
+  s6_rule:'🛑 Ini BUKAN Perlumbaan Di Jalan Raya',s6_rule_sub:'Penalti boleh diberikan untuk tingkah laku tidak selamat.',
   s7_title:'Hormati <span class="gold">Ruang</span> Awam',
-  s7_a_title:'â Sentiasa',s7_a1:'Letak kereta dengan sah',s7_a2:'Gunakan tempat letak kereta yang betul',s7_a3:'Hormati pemilik kedai',s7_a4:'Pastikan laluan tidak terhalang',
-  s7_f_title:'ð« JANGAN',s7_f1:'Membuang sampah',s7_f2:'Mengalihkan harta awam',s7_f3:'Menyentuh barang kedai tanpa kebenaran',s7_f4:'Mengganggu penduduk tempatan',
+  s7_a_title:'✅ Sentiasa',s7_a1:'Letak kereta dengan sah',s7_a2:'Gunakan tempat letak kereta yang betul',s7_a3:'Hormati pemilik kedai',s7_a4:'Pastikan laluan tidak terhalang',
+  s7_f_title:'🚫 JANGAN',s7_f1:'Membuang sampah',s7_f2:'Mengalihkan harta awam',s7_f3:'Menyentuh barang kedai tanpa kebenaran',s7_f4:'Mengganggu penduduk tempatan',
   s7_c1:'Syarikat Anda',s7_c2:'Penganjur',s7_c3:'Diri Sendiri',s7_note:'Anda mewakili ketiga-tiganya. Bertindak secara profesional.',
-  s8_title:'â ï¸ Kesedaran <span class="gold">Keselamatan</span>',
+  s8_title:'⚠️ Kesedaran <span class="gold">Keselamatan</span>',
   s8_c1t:'Lintasan Jalan',s8_c1b:'Sentiasa gunakan lintasan pejalan kaki. Awasi trafik.',
   s8_c2t:'Keletihan Haba',s8_c2b:'Kekal terhidrat. Rehat di tempat teduh. Lapor jika tidak sihat.',
   s8_c3t:'Dehidrasi',s8_c3b:'Minum air secara konsisten sepanjang hari.',
   s8_c4t:'Kawasan Pembinaan',s8_c4b:'Elakkan semua zon pembinaan. Jangan masuk.',
   s8_c5t:'Permukaan Licin',s8_c5b:'Berjalan dengan berhati-hati di permukaan basah atau tidak rata.',
   s8_c6t:'Bantu Rakan Sepasukan',s8_c6b:'Jaga antara satu sama lain. Tiada yang ditinggalkan.',
-  s8_rule:'Fikir Cepat â Bergerak Perlahan',
-  s9_title:'ð Sokongan <span class="gold">Bahasa</span>',s9_sub:'Semua petunjuk tersedia dalam 3 bahasa',
-  s9_bm:'Bahasa Malaysia',s9_zh:'Bahasa Cina',s9_zh_sub:'ä¸­æ',
-  s9_tip:'ð¡ Tukar bahasa di bahagian atas sistem',s9_tip2:'Pilih bahasa yang difahami pasukan anda.',
-  s10_title:'ð Apa Yang Perlu <span class="gold">Dipakai</span>',
-  s10_a_title:'â Disyorkan',s10_a1:'Pakaian selesa',s10_a2:'Kasut sukan atau berjalan',s10_a3:'Pakaian ringan yang boleh bernafas',
-  s10_f_title:'ð« Elakkan',s10_f1:'Selipar atau sandal',s10_f2:'Kasut formal',s10_f3:'Beg berat',s10_f4:'Pakaian ketat',
+  s8_rule:'Fikir Cepat — Bergerak Perlahan',
+  s9_title:'🌐 Sokongan <span class="gold">Bahasa</span>',s9_sub:'Semua petunjuk tersedia dalam 3 bahasa',
+  s9_bm:'Bahasa Malaysia',s9_zh:'Bahasa Cina',s9_zh_sub:'中文',
+  s9_tip:'💡 Tukar bahasa di bahagian atas sistem',s9_tip2:'Pilih bahasa yang difahami pasukan anda.',
+  s10_title:'👕 Apa Yang Perlu <span class="gold">Dipakai</span>',
+  s10_a_title:'✅ Disyorkan',s10_a1:'Pakaian selesa',s10_a2:'Kasut sukan atau berjalan',s10_a3:'Pakaian ringan yang boleh bernafas',
+  s10_f_title:'🚫 Elakkan',s10_f1:'Selipar atau sandal',s10_f2:'Kasut formal',s10_f3:'Beg berat',s10_f4:'Pakaian ketat',
   s10_c1t:'Topi',s10_c1b:'Lindungi dari pendedahan matahari',s10_c2t:'Cermin Mata',s10_c2b:'Perlindungan mata di luar',s10_c3t:'Pelindung Matahari',s10_c3b:'Sapukan sebelum bermula',
-  s11_title:'ð Apa Yang Perlu <span class="gold">Dibawa</span>',
+  s11_title:'🎒 Apa Yang Perlu <span class="gold">Dibawa</span>',
   s11_c1t:'Telefon Penuh Cas',s11_c1b:'Penuh dicas. Telefon pasukan dengan akses internet diperlukan.',
   s11_c2t:'Bank Kuasa',s11_c2b:'Pastikan telefon anda kekal hidup sepanjang hari.',
   s11_c3t:'Botol Air',s11_c3b:'Kekal terhidrat. Penting untuk acara luar sehari penuh.',
   s11_c4t:'Wang Tunai Kecil',s11_c4b:'Untuk keperluan tidak dijangka, tempat letak kereta, atau pembelian kecil.',
-  s11_c5t:'Payung',s11_c5b:'Pilihan â berguna jika cuaca berubah.',
+  s11_c5t:'Payung',s11_c5b:'Pilihan — berguna jika cuaca berubah.',
   s11_c6t:'Snek',s11_c6b:'Pilihan. Kekalkan tenaga antara aktiviti.',
-  s12_title:'ð¬ Penubuhan <span class="gold">Kumpulan WhatsApp</span>',s12_sub:'Setiap pasukan MESTI mencipta kumpulan WhatsApp sebelum bermula',
-  s12_c1_title:'ð² Sertakan Dalam Kumpulan',s12_i1:'Semua ahli pasukan',s12_i2:'Hubungi fasilitator',s12_i3:'Nombor hubungan kecemasan',
-  s12_c2_title:'ð¯ Tujuan Kumpulan',s12_i4:'Koordinasi pasukan',s12_i5:'Komunikasi kecemasan',s12_i6:'Penjelasan tugasan',s12_i7:'Sandaran penghantaran',
-  s12_rule:'â° Lakukan Ini Sebelum Perburu Bermula',
-  s13_title:'ð Kenalan <span class="gold">Kecemasan</span>',
+  s12_title:'💬 Penubuhan <span class="gold">Kumpulan WhatsApp</span>',s12_sub:'Setiap pasukan MESTI mencipta kumpulan WhatsApp sebelum bermula',
+  s12_c1_title:'📲 Sertakan Dalam Kumpulan',s12_i1:'Semua ahli pasukan',s12_i2:'Hubungi fasilitator',s12_i3:'Nombor hubungan kecemasan',
+  s12_c2_title:'🎯 Tujuan Kumpulan',s12_i4:'Koordinasi pasukan',s12_i5:'Komunikasi kecemasan',s12_i6:'Penjelasan tugasan',s12_i7:'Sandaran penghantaran',
+  s12_rule:'⏰ Lakukan Ini Sebelum Perburu Bermula',
+  s13_title:'🆘 Kenalan <span class="gold">Kecemasan</span>',
   s13_bryan_role:'Pengurus Permainan',s13_seb_role:'Pegawai Keselamatan',
-  s13_call:'ð Hubungi',s13_wa:'ð¬ WhatsApp',s13_call2:'ð Hubungi',
+  s13_call:'📞 Hubungi',s13_wa:'💬 WhatsApp',s13_call2:'📞 Hubungi',
   s13_c1:'Kecederaan',s13_c2:'Peserta Hilang',s13_c3:'Masalah Kenderaan',s13_c4:'Keletihan Haba',
-  s13_rule:'Laporkan Awal â Bukan Lewat',
-  s14_title:'âï¸ Bermain Dengan <span class="gold">Jujur</span>',
-  s14_f_title:'ð« JANGAN',s14_f1:'Curang dalam apa jua bentuk',s14_f2:'Hantar bukti palsu atau berperingkat',s14_f3:'Gunakan foto lama atau dikitar semula',s14_f4:'Salin penghantaran pasukan lain',
-  s14_w_title:'â ï¸ Pelanggaran Boleh Menyebabkan',s14_w1:'Potongan mata',s14_w2:'Diskualifikasi tugasan',s14_w3:'Penalti penuh pasukan',
-  s14_rule:'ð Integriti Lebih Penting Daripada Kemenangan',
-  s15_title:'â±ï¸ Pengurusan <span class="gold">Masa</span>',
-  s15_a_title:'â Pasukan Bijak',s15_a1:'Rancang laluan dahulu',s15_a2:'Tetapkan peranan yang jelas',s15_a3:'Utamakan tugasan bernilai tinggi',s15_a4:'Jejak masa sentiasa',
-  s15_f_title:'â Pasukan Kalah',s15_f1:'Berlari secara rawak',s15_f2:'Tiada komunikasi dalaman',s15_f3:'Tiada rancangan atau strategi',s15_f4:'Membuang masa pada skor rendah',
-  s15_rule:'ð§  Strategi Menang Lebih Daripada Kelajuan',
-  s16_title:'ðï¸ Hormati <span class="gold">Tapak Warisan</span>',s16_sub:'Ini adalah lokasi sejarah sebenar. Layani mereka seperti muzium.',
-  s16_r1:'JANGAN <strong>PANJAT</strong> monumen atau struktur warisan â walaupun untuk gambar',
+  s13_rule:'Laporkan Awal — Bukan Lewat',
+  s14_title:'⚖️ Bermain Dengan <span class="gold">Jujur</span>',
+  s14_f_title:'🚫 JANGAN',s14_f1:'Curang dalam apa jua bentuk',s14_f2:'Hantar bukti palsu atau berperingkat',s14_f3:'Gunakan foto lama atau dikitar semula',s14_f4:'Salin penghantaran pasukan lain',
+  s14_w_title:'⚠️ Pelanggaran Boleh Menyebabkan',s14_w1:'Potongan mata',s14_w2:'Diskualifikasi tugasan',s14_w3:'Penalti penuh pasukan',
+  s14_rule:'🏅 Integriti Lebih Penting Daripada Kemenangan',
+  s15_title:'⏱️ Pengurusan <span class="gold">Masa</span>',
+  s15_a_title:'✅ Pasukan Bijak',s15_a1:'Rancang laluan dahulu',s15_a2:'Tetapkan peranan yang jelas',s15_a3:'Utamakan tugasan bernilai tinggi',s15_a4:'Jejak masa sentiasa',
+  s15_f_title:'❌ Pasukan Kalah',s15_f1:'Berlari secara rawak',s15_f2:'Tiada komunikasi dalaman',s15_f3:'Tiada rancangan atau strategi',s15_f4:'Membuang masa pada skor rendah',
+  s15_rule:'🧠 Strategi Menang Lebih Daripada Kelajuan',
+  s16_title:'🏛️ Hormati <span class="gold">Tapak Warisan</span>',s16_sub:'Ini adalah lokasi sejarah sebenar. Layani mereka seperti muzium.',
+  s16_r1:'JANGAN <strong>PANJAT</strong> monumen atau struktur warisan — walaupun untuk gambar',
   s16_r2:'JANGAN <strong>DUDUK</strong> atau bersandar pada struktur warisan',
   s16_r3:'JANGAN <strong>SENTUH</strong> barang atau artifak yang rapuh',
   s16_r4:'JANGAN <strong>ROSAK</strong>, tandai, atau catat mural dan dinding',
   s16_rule:"Tempat Ini Adalah Sebahagian Daripada Sejarah Malaysia.",
-  s17_title:'ð¤ Peraturan <span class="gold">Penghantaran</span>',
-  s17_r1:'Hantar <strong>foto yang betul</strong> â jelas, boleh dibaca, sesuai dengan tugasan',
+  s17_title:'📤 Peraturan <span class="gold">Penghantaran</span>',
+  s17_r1:'Hantar <strong>foto yang betul</strong> — jelas, boleh dibaca, sesuai dengan tugasan',
   s17_r2:'Foto mesti menunjukkan <strong>bukti yang jelas</strong> penyelesaian tugasan',
   s17_r3:'Pastikan ia adalah <strong>kotak tugasan yang betul</strong> yang anda lengkapkan',
   s17_r4:'Sertakan <strong>ahli pasukan yang betul</strong> seperti yang diperlukan oleh petunjuk',
-  s17_r5:'<strong>Penalti penghantaran lewat</strong> mungkin dikenakan â hantar tepat waktu',
-  s17_r6:'<strong>Kapten Pasukan</strong> sahaja yang menghantar â satu penghantaran setiap tugasan',
-  s18_title:'â ï¸ Sistem <span class="gold">Penalti</span>',s18_th1:'Pelanggaran',s18_th2:'Akibat',
-  s18_v1:'ð¨ Tingkah Laku Tidak Selamat',s18_p1:'-50 mata',s18_v2:'â° Penghantaran Lewat',s18_p2:'-20 mata',
-  s18_v3:'ð¿ï¸ Meletak Kenderaan Haram',s18_p3:'-50 mata',s18_v4:'â Penghantaran Palsu',s18_p4:'DISKUALIFIKASI',
+  s17_r5:'<strong>Penalti penghantaran lewat</strong> mungkin dikenakan — hantar tepat waktu',
+  s17_r6:'<strong>Kapten Pasukan</strong> sahaja yang menghantar — satu penghantaran setiap tugasan',
+  s18_title:'⚠️ Sistem <span class="gold">Penalti</span>',s18_th1:'Pelanggaran',s18_th2:'Akibat',
+  s18_v1:'🚨 Tingkah Laku Tidak Selamat',s18_p1:'-50 mata',s18_v2:'⏰ Penghantaran Lewat',s18_p2:'-20 mata',
+  s18_v3:'🅿️ Meletak Kenderaan Haram',s18_p3:'-50 mata',s18_v4:'❌ Penghantaran Palsu',s18_p4:'DISKUALIFIKASI',
   s18_rule:'Jangan Biarkan Jalan Pintas Merugikan Anda Dalam Permainan',
-  s19_title:'ð§ï¸ Protokol <span class="gold">Cuaca</span>',
-  s19_r_title:'ð§ï¸ Jika Hujan Lebat',s19_r1:'Tangguhkan aktiviti segera',s19_r2:'Pergi ke tempat perlindungan selamat',s19_r3:'Tunggu arahan penganjur',
-  s19_h_title:'âï¸ Jika Panas Melampau',s19_h1:'Minum air segera',s19_h2:'Rehat di tempat teduh',s19_h3:'Maklumkan fasilitator jika tidak sihat',
-  s19_rule:'ðï¸ Penganjur Boleh Melaraskan Masa Permainan Untuk Keselamatan',
-  s20_title:'ð Jika <span class="gold">Masalah</span> Berlaku',
+  s19_title:'🌧️ Protokol <span class="gold">Cuaca</span>',
+  s19_r_title:'🌧️ Jika Hujan Lebat',s19_r1:'Tangguhkan aktiviti segera',s19_r2:'Pergi ke tempat perlindungan selamat',s19_r3:'Tunggu arahan penganjur',
+  s19_h_title:'☀️ Jika Panas Melampau',s19_h1:'Minum air segera',s19_h2:'Rehat di tempat teduh',s19_h3:'Maklumkan fasilitator jika tidak sihat',
+  s19_rule:'🗓️ Penganjur Boleh Melaraskan Masa Permainan Untuk Keselamatan',
+  s20_title:'🆘 Jika <span class="gold">Masalah</span> Berlaku',
   s20_c1t:'Pasukan Sesat',s20_c1b:'Hubungi fasilitator segera melalui WhatsApp atau panggilan.',
   s20_c2t:'Telefon Mati',s20_c2b:'Kembali ke pusat semak terdekat dengan segera.',
   s20_c3t:'Kenderaan Rosak',s20_c3b:'Maklumkan penganjur segera. Kekal selamat dan jauh dari jalan.',
-  s20_rule:'ð Jangan Hilang Tanpa Memaklumkan',
-  s21_title:'ðï¸ Pertikaian <span class="gold">Pemarkahan</span>',s21_rule:'Keputusan Pengurus Permainan Adalah Muktamad',
+  s20_rule:'🔕 Jangan Hilang Tanpa Memaklumkan',
+  s21_title:'🏛️ Pertikaian <span class="gold">Pemarkahan</span>',s21_rule:'Keputusan Pengurus Permainan Adalah Muktamad',
   s21_para:'Hormati keputusan untuk memastikan permainan berjalan lancar untuk semua pasukan.',
-  s22_title:'ð¤ Kod <span class="gold">Tingkah Laku</span>',s22_sub:'Ini adalah acara korporat. Bertindak dengan sewajarnya.',
+  s22_title:'🤝 Kod <span class="gold">Tingkah Laku</span>',s22_sub:'Ini adalah acara korporat. Bertindak dengan sewajarnya.',
   s22_c1t:'Hormat',s22_c1b:'Kepada penduduk tempatan, rakan sepasukan, tapak warisan, dan penganjur.',
   s22_c2t:'Bertanggungjawab',s22_c2b:'Ambil tanggungjawab atas tindakan anda dan pasukan.',
   s22_c3t:'Selamat',s22_c3b:'Keselamatan dahulu pada setiap masa. Tiada pengecualian.',
@@ -1009,129 +1009,129 @@ bm:{
   s23_title:'<span class="gold">Perjalanan</span> Hari Ini',s23_sub:'Mudah. Jelas. Terstruktur.',
   s23_f1:'Taklimat',s23_f2:'Perburu',s23_f3:'Hantar',s23_f4:'Makan Tengah Hari',s23_f5:'Dalam Bangunan',s23_f6:'Anugerah',
   s24_title:'Peraturan Paling <span class="gold">Penting</span>',
-  s24_p1:'ð¡ï¸ Keselamatan',s24_p2:'ð Reputasi',s24_p3:'ð¤ Kerja Berpasukan',s24_p4:'ð Menang',
-  s24_r1:'Jika Tidak Selamat â BERHENTI',s24_r2:'Jika Ragu-ragu â TANYA',s24_r3:'Jika Penat â REHAT',
+  s24_p1:'🛡️ Keselamatan',s24_p2:'🏅 Reputasi',s24_p3:'🤝 Kerja Berpasukan',s24_p4:'🏆 Menang',
+  s24_r1:'Jika Tidak Selamat — BERHENTI',s24_r2:'Jika Ragu-ragu — TANYA',s24_r3:'Jika Penat — REHAT',
   s24_para:'Kemenangan tidak bermakna apa-apa jika seseorang cedera.',
   s25_title:'<span class="gold">Objektif</span> Hari Ini',
   s25_c1:'Berseronok',s25_c2:'Bekerja Bersama',s25_c3:'Pelajari Klang',s25_c4:'Pulang Selamat',
-  s25_rule:'Itulah Acara Yang Berjaya.',s25_sub:'Semoga berjaya, kekal selamat, dan nikmati Perburu Bingo Warisan Klang! ð'
+  s25_rule:'Itulah Acara Yang Berjaya.',s25_sub:'Semoga berjaya, kekal selamat, dan nikmati Perburu Bingo Warisan Klang! 🏆'
 },
 zh:{
-  s1_label:'å®å¨ä¸æ¸¸æè¯´æ',s1_title:'å·´çæåéäº§<br/>å®¾æå¯»å®',
-  s1_tagline:'<span class="hero-tag-word">æ¢ç´¢</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">å­¦ä¹ </span> &nbsp;â¢&nbsp; <span class="hero-tag-word">ç«äº</span> &nbsp;â¢&nbsp; <span class="hero-tag-word">å®å¨è¿å</span>',
-  s1_tag1:'ð å·´çæåéäº§å°ç¹',s1_tag2:'ð¯ 25é¡¹ææ',s1_tag3:'ð ç§¯å + å®¾æå¥å±',
-  s2_title:'æä»¬ç<span class="gold">ä»»å¡</span>',s2_sub:'å®æå·´çæåéäº§å°ç¹å¨å´çå®¾æææä»¥è·å¾ç§¯åã',
-  s2_c1t:'å®æä»»å¡',s2_c1b:'æ¯é¡¹å®æçææä¸ºå¢éèµ¢å¾ç§¯åï¼è®¡å¥æ»åã',
-  s2_c2t:'è¾¾æå®¾æçº¿',s2_c2b:'å®æä¸è¡ãä¸åæå¯¹è§çº¿å¯è·å¾é¢å¤å¥å±ç§¯åã',
-  s2_c3t:'æé«åè·è',s2_c3b:'ç»ææ¶æ»ç§¯åæå¤çå¢éèµ¢å¾å åã',
-  s2_rule:'â ï¸ å®å¨ &gt; éåº¦ â æ°¸è¿å¦æ­¤',s2_rule_sub:'è§å#1ï¼æ²¡æä»»ä½ä»»å¡å¼å¾åé©åä¼¤ã',
-  s3_title:'<span class="gold">å®¾æ</span>æ¸¸æè§å',s3_sub:'ç¹å»ä»»ææ ¼å­æ è®°å®æ â è§å¯ä½ çç§¯ååè¿çº¿å¢é¿',
-  s3_score_hdr:'ð å®æ¶ç§¯åæ¿',s3_tasks_lbl:'â å·²å®æä»»å¡',s3_tpts_lbl:'ð¯ ä»»å¡ç§¯å',
-  s3_lines_lbl:'â­ å·²è¾¾æè¿çº¿',s3_bonus_lbl:'ð è¿çº¿å¥å±',s3_full_lbl:'ð æ»¡æ ¼å¥å±',
-  s3_total_lbl:'æ»ç§¯å',s3_line_tracker:'å·²å®æå®¾æçº¿ï¼æ¯æ¡100åï¼',
-  s3_fullcard:'ð æ»¡æ ¼ï¼+500å¥å±å',s3_reset:'âº éç½®æ£ç',
-  s4_title:'ä»ç»éè¯»<span class="gold">çº¿ç´¢</span>',s4_sub:'æ¯æ¡çº¿ç´¢é½å¾éè¦ â åçè§£åè¡å¨ã',
-  s4_col1_title:'ð ä»»å¡è¦æ±',s4_col2_title:'ð§  åæè¯ææ¹å¼',
-  s4_i1:'éè¦<strong>æ´éåä¸</strong> â ææäººåºç°å¨ç§çä¸­',
-  s4_i2:'æ³¨æ<strong>æå°äººæ°</strong> â ä¸¥æ ¼éµå®',
-  s4_i3:'ä»é<strong>1åä»£è¡¨</strong>',
-  s4_i4:'æªæ³¨ææ¶ â å¯èªç±åå·¥åä½',
-  s4_i5:'ä½¿ç¨è§é¢éè¯æªå¾',s4_i6:'ä½¿ç¨åå°ï¼ç»ç/éå­ï¼',
-  s4_i7:'åæç«ä½ææ',s4_i8:'å¢ééå·ææ è¯',s4_i9:'æåè§åå¹¶éæ°éå',
-  s4_rule:'æææåå¿é¡»å¨åº â å¦ä½å®ç°æ¯ä½ ä»¬çç­ç¥ã',
-  s5_title:'åæ<span class="gold">èµ¢å¾</span>ç§¯å',
-  s5_a_title:'â åè®¸',s5_a1:'åæå§¿å¿',s5_a2:'è¡¨æ¼åºæ¯',s5_a3:'æäºæ§ç§ç',s5_a4:'èºæ¯æå¾',
-  s5_f_title:'ð« ä¸åè®¸',s5_f1:'é»å¡éé',s5_f2:'ææ°å¬ä¼',s5_f3:'è¿å¥ç¦åº',s5_f4:'æç¬ä¸å®å¨ç»æ',
-  s5_rule:'ð é»éæ³åï¼ä¿æåæä½ä¸é æå¹²æ°',
-  s6_title:'ð é©¾é©¶<span class="gold">å®å¨</span>',
-  s6_a_title:'â å¸æºå¿é¡»',s6_a1:'éµå®ææäº¤éæ³è§',s6_a2:'ä¸è¶é',s6_a3:'ä¸ä¸å¶ä»éä¼èµè½¦',s6_a4:'ä¸èµ°å±é©æ·å¾',
-  s6_f_title:'ð« ä¸¥æ ¼ç¦æ­¢',s6_f1:'å¼è½¦æ¶ä½¿ç¨ææº',s6_f2:'åæåè½¦',s6_f3:'è¿è§Uè½¬',s6_f4:'å±é©åè½¦',
-  s6_rule:'ð è¿ä¸æ¯è·¯ä¸çèµè½¦',s6_rule_sub:'ä¸å®å¨è¡ä¸ºå¯è½ä¼åå°æ©ç½ã',
-  s7_title:'å°é<span class="gold">å¬å±</span>ç©ºé´',
-  s7_a_title:'â åºè¯¥',s7_a1:'åæ³åè½¦',s7_a2:'ä½¿ç¨æ­£è§åè½¦åº',s7_a3:'å°éåºä¸»',s7_a4:'ä¿æééçé',
-  s7_f_title:'ð« ä¸å¾',s7_f1:'ä¹±æåå¾',s7_f2:'ç§»å¨å¬å±è´¢ç©',s7_f3:'æªç»è®¸å¯è§¦æ¸åºéºç©å',s7_f4:'ææ°å½å°å±æ°',
-  s7_c1:'è´µå¬å¸',s7_c2:'ä¸»åæ¹',s7_c3:'æ¨èªå·±',s7_note:'æ¨ä»£è¡¨ä¸èãä¿æä¸ä¸ã',
-  s8_title:'â ï¸ å®å¨<span class="gold">æè¯</span>',
-  s8_c1t:'è¿é©¬è·¯',s8_c1b:'å§ç»ä½¿ç¨äººè¡æ¨ªéãæ³¨æäº¤éã',
-  s8_c2t:'ä¸­æ',s8_c2b:'ä¿æè¡¥æ°´ãå¨é´åå¤ä¼æ¯ãè¥æä¸éè¯·æ¥åã',
-  s8_c3t:'è±æ°´',s8_c3b:'å¨å¤©æç»­é¥®æ°´ã',
-  s8_c4t:'æ½å·¥åºå',s8_c4b:'é¿å¼æææ½å·¥åºãä¸å¾è¿å¥ã',
-  s8_c5t:'æ¹¿æ»å°é¢',s8_c5b:'å¨æ½®æ¹¿æä¸å¹³æ´çå°é¢ä¸å°å¿è¡èµ°ã',
-  s8_c6t:'å¸®å©éå',s8_c6b:'äºç¸å³ç§ãä¸è®©ä»»ä½äººè½åã',
-  s8_rule:'æç»´å¿«é â è¡å¨ç¼æ¢',
-  s9_title:'ð è¯­è¨<span class="gold">æ¯æ</span>',s9_sub:'ææçº¿ç´¢æä¾3ç§è¯­è¨çæ¬',
-  s9_bm:'é©¬æ¥è¯­',s9_zh:'ä¸­æ',s9_zh_sub:'ä¸­æ',
-  s9_tip:'ð¡ å¨ç³»ç»é¡¶é¨åæ¢è¯­è¨',s9_tip2:'éæ©æ¨çå¢éæå®¹æçè§£çè¯­è¨ã',
-  s10_title:'ð ç©¿ç<span class="gold">å»ºè®®</span>',
-  s10_a_title:'â æ¨è',s10_a1:'èéçæè£',s10_a2:'è¿å¨éææ­¥è¡é',s10_a3:'è½»ä¾¿éæ°çè¡£ç©',
-  s10_f_title:'ð« é¿å',s10_f1:'æéæåé',s10_f2:'æ­£å¼ç®é',s10_f3:'éååè¢',s10_f4:'ç´§èº«è¡£ç©',
-  s10_c1t:'å¸½å­',s10_c1b:'é²æ­¢å¤ªé³ç´æ',s10_c2t:'å¤ªé³é',s10_c2b:'æ·å¤ç¼é¨ä¿æ¤',s10_c3t:'é²æé',s10_c3b:'åºååæ¶æ¹',
-  s11_title:'ð æºå¸¦<span class="gold">ç©å</span>',
-  s11_c1t:'åæ»¡çµçææº',s11_c1b:'åæ»¡çµãéè¦æç½ç»çå¢éææºã',
-  s11_c2t:'åçµå®',s11_c2b:'å¨å¤©ä¿æææºçµéåè¶³ã',
-  s11_c3t:'æ°´ç¶',s11_c3b:'è¡¥åæ°´åãæ·å¤å¨å¤©æ´»å¨å¿å¤ã',
-  s11_c4t:'å°éç°é',s11_c4b:'ç¨äºæå¤éæ±ãåè½¦æå°é¢è´­ä¹°ã',
-  s11_c5t:'é¨ä¼',s11_c5b:'å¯é â å¤©æ°ååæ¶æç¨ã',
-  s11_c6t:'é¶é£',s11_c6b:'å¯éãå¨æ´»å¨ä¹é´ä¿æä½åã',
-  s12_title:'ð¬ WhatsApp<span class="gold">ç¾¤ç»</span>è®¾ç½®',s12_sub:'æ¯éå¿é¡»å¨å¼å§ååå»ºWhatsAppç¾¤ç»',
-  s12_c1_title:'ð² ç¾¤ç»æå',s12_i1:'ææéå',s12_i2:'åè°åèç³»æ¹å¼',s12_i3:'ç´§æ¥èç³»å·ç ',
-  s12_c2_title:'ð¯ ç¾¤ç»ç¨é',s12_i4:'å¢éåè°',s12_i5:'ç´§æ¥éè®¯',s12_i6:'ä»»å¡æ¾æ¸',s12_i7:'æäº¤å¤ä»½',
-  s12_rule:'â° å¨å¯»å®å¼å§åå®ææ­¤æä½',
-  s13_title:'ð ç´§æ¥<span class="gold">èç³»</span>',
-  s13_bryan_role:'æ¸¸æä¸»æ',s13_seb_role:'å®å¨å®å',
-  s13_call:'ð è´çµ',s13_wa:'ð¬ WhatsApp',s13_call2:'ð è´çµ',
-  s13_c1:'åä¼¤',s13_c2:'æåèµ°å¤±',s13_c3:'è½¦è¾é®é¢',s13_c4:'ä¸­æ',
-  s13_rule:'å°½æ©æ¥å â ä¸è¦ç­å°æå',
-  s14_title:'âï¸ å¬å¹³<span class="gold">æ¸¸æ</span>',
-  s14_f_title:'ð« ä¸å¾',s14_f1:'ä»¥ä»»ä½å½¢å¼ä½å¼',s14_f2:'æäº¤èåæä¼ªé è¯æ®',s14_f3:'ä½¿ç¨æ§ç§çæåæ¶ç§ç',s14_f4:'æè¢­å¶ä»éä¼çæäº¤åå®¹',
-  s14_w_title:'â ï¸ è¿è§å¯è½å¯¼è´',s14_w1:'æ£å',s14_w2:'ä»»å¡åæ¶èµæ ¼',s14_w3:'å¨éå¤ç½',
-  s14_rule:'ð è¯ä¿¡æ¯èµ¢å¾æ¯èµæ´éè¦',
-  s15_title:'â±ï¸ æ¶é´<span class="gold">ç®¡ç</span>',
-  s15_a_title:'â èªæçéä¼',s15_a1:'åè§åè·¯çº¿',s15_a2:'æç¡®åéè§è²',s15_a3:'ä¼åå®æé«åä»»å¡',s15_a4:'æç»­è¿½è¸ªæ¶é´',
-  s15_f_title:'â å¤±è´¥çéä¼',s15_f1:'éæä¹±è·',s15_f2:'æ²¡æåé¨æ²é',s15_f3:'æ²¡æè®¡åæç­ç¥',s15_f4:'ææ¶é´æµªè´¹å¨ä½åä»»å¡ä¸',
-  s15_rule:'ð§  ç­ç¥æ¯éåº¦æ´è½èµ¢å¾æ¯èµ',
-  s16_title:'ðï¸ å°é<span class="gold">æåéäº§</span>æ¯ç¹',s16_sub:'è¿äºæ¯çå®çåå²å°ç¹ãè¯·åå¯¹å¾åç©é¦ä¸æ ·å¯¹å¾å®ä»¬ã',
-  s16_r1:'åå¿<strong>æç¬</strong>ç»ªå¿µç¢æéäº§å»ºç­ â å³ä½¿æ¯ä¸ºäºæç§',
-  s16_r2:'åå¿<strong>åå¨</strong>æåé éäº§å»ºç­',
-  s16_r3:'åå¿<strong>è§¦æ¸</strong>æç¢ç©åææç©',
-  s16_r4:'åå¿<strong>æå</strong>ãæ¶åæç ´åå£ç»åå¢å£',
-  s16_rule:"è¿äºå°æ¹æ¯é©¬æ¥è¥¿äºåå²çä¸é¨åã",
-  s17_title:'ð¤ æäº¤<span class="gold">è§å</span>',
-  s17_r1:'æäº¤<strong>æ­£ç¡®çç§ç</strong> â æ¸æ°ãå¯è¯»ãä¸ä»»å¡å¹é',
-  s17_r2:'ç§çå¿é¡»æ¸æ¥<strong>è¯æä»»å¡å®æ</strong>',
-  s17_r3:'ç¡®ä¿æ¨å®æçæ¯<strong>æ­£ç¡®çä»»å¡</strong>æ ¼å­',
-  s17_r4:'åå«çº¿ç´¢è¦æ±ç<strong>æ­£ç¡®éå</strong>',
-  s17_r5:'<strong>è¿äº¤å¯è½è¢«æ£å</strong> â è¯·åæ¶æäº¤',
-  s17_r6:'ä»<strong>éé¿æäº¤</strong> â æ¯é¡¹ä»»å¡ä¸æ¬¡æäº¤',
-  s18_title:'â ï¸ å¤ç½<span class="gold">å¶åº¦</span>',s18_th1:'è¿è§è¡ä¸º',s18_th2:'å¤ç½',
-  s18_v1:'ð¨ ä¸å®å¨è¡ä¸º',s18_p1:'-50å',s18_v2:'â° è¿äº¤',s18_p2:'-20å',
-  s18_v3:'ð¿ï¸ è¿è§åè½¦',s18_p3:'-50å',s18_v4:'â èåæäº¤',s18_p4:'åæ¶èµæ ¼',
-  s18_rule:'ä¸è¦è®©æ·å¾æ¯äºæ¨çæ¯èµ',
-  s19_title:'ð§ï¸ å¤©æ°<span class="gold">åºå¯¹</span>',
-  s19_r_title:'ð§ï¸ è¥éå¤§é¨',s19_r1:'ç«å³æåæ´»å¨',s19_r2:'è½¬ç§»å°å®å¨åºæ¤æ',s19_r3:'ç­å¾ä¸»åæ¹æç¤º',
-  s19_h_title:'âï¸ è¥éé·ç­',s19_h1:'ç«å³è¡¥åæ°´å',s19_h2:'å¨é´åå¤ä¼æ¯',s19_h3:'è¥æä¸éè¯·åç¥åè°å',
-  s19_rule:'ðï¸ ä¸»åæ¹å¯è½ä¼è°æ´æ¸¸ææ¶é´ä»¥ç¡®ä¿å®å¨',
-  s20_title:'ð åç<span class="gold">é®é¢</span>æ¶',
-  s20_c1t:'å¢éè¿·è·¯',s20_c1b:'ç«å³éè¿WhatsAppæçµè¯èç³»åè°åã',
-  s20_c2t:'ææºæ²¡çµ',s20_c2b:'ç«å³è¿åæè¿çæ£æ¥ç¹ã',
-  s20_c3t:'è½¦è¾æé',s20_c3b:'ç«å³éç¥ä¸»åæ¹ãä¿æå®å¨ï¼è¿ç¦»éè·¯ã',
-  s20_rule:'ð ä¸è¦å¨æªéç¥çæåµä¸æ¶å¤±',
-  s21_title:'ðï¸ è¯å<span class="gold">äºè®®</span>',s21_rule:'æ¸¸æä¸»æçå³å®ä¸ºæç»å³å®',
-  s21_para:'å°éå³å®ï¼ä¿ææ¯èµé¡ºçè¿è¡ï¼å¯¹ææéä¼é½å¬å¹³ã',
-  s22_title:'ð¤ è¡ä¸º<span class="gold">åå</span>',s22_sub:'è¿æ¯ä¸é¡¹ä¼ä¸æ´»å¨ãè¯·ä¿æç¸åºè¡ä¸ºã',
-  s22_c1t:'å°é',s22_c1b:'å¯¹å½å°å±æ°ãéåãéäº§æ¯ç¹åä¸»åæ¹ã',
-  s22_c2t:'è´è´£',s22_c2b:'å¯¹èªå·±çè¡ä¸ºè´è´£ãä¸ºå¢éè´è´£ã',
-  s22_c3t:'å®å¨',s22_c3b:'ä»»ä½æ¶åé½å®å¨ç¬¬ä¸ãæ²¡æä¾å¤ã',
-  s22_c4t:'ä¸ä¸',s22_c4b:'æ¨ä»£è¡¨è´µå¬å¸ãä¿æä¸ä¸è¡ä¸ºã',
-  s23_title:'ä»æ¥<span class="gold">è¡ç¨</span>',s23_sub:'ç®åãæ¸æ°ãææ¡çã',
-  s23_f1:'è¯´æä¼',s23_f2:'å¯»å®',s23_f3:'æäº¤',s23_f4:'åé¤',s23_f5:'å®¤åæ´»å¨',s23_f6:'é¢å¥',
-  s24_title:'æéè¦ç<span class="gold">è§å</span>',
-  s24_p1:'ð¡ï¸ å®å¨',s24_p2:'ð å£°èª',s24_p3:'ð¤ å¢éåä½',s24_p4:'ð è·è',
-  s24_r1:'è¥ä¸å®å¨ â åä¸',s24_r2:'è¥ä¸ç¡®å® â è¯¢é®',s24_r3:'è¥ç²æ« â ä¼æ¯',
-  s24_para:'å¦ææäººåä¼¤ï¼èµ¢å¾æ¯èµæ¯«æ æä¹ã',
-  s25_title:'<span class="gold">ä»æ¥ç®æ </span>',
-  s25_c1:'äº«åä¹è¶£',s25_c2:'å¢éåä½',s25_c3:'äºè§£å·´ç',s25_c4:'å®å¨è¿å',
-  s25_rule:'è¿å°±æ¯æåçæ´»å¨ã',s25_sub:'ç¥å¥½è¿ï¼ä¿æå®å¨ï¼äº«åå·´çæåéäº§å®¾æå¯»å®ï¼ð'
+  s1_label:'安全与游戏说明',s1_title:'巴生文化遗产<br/>宾果寻宝',
+  s1_tagline:'<span class="hero-tag-word">探索</span> &nbsp;•&nbsp; <span class="hero-tag-word">学习</span> &nbsp;•&nbsp; <span class="hero-tag-word">竞争</span> &nbsp;•&nbsp; <span class="hero-tag-word">安全返回</span>',
+  s1_tag1:'📍 巴生文化遗产地点',s1_tag2:'🎯 25项挑战',s1_tag3:'🏅 积分 + 宾果奖励',
+  s2_title:'我们的<span class="gold">任务</span>',s2_sub:'完成巴生文化遗产地点周围的宾果挑战以获得积分。',
+  s2_c1t:'完成任务',s2_c1b:'每项完成的挑战为团队赢得积分，计入总分。',
+  s2_c2t:'达成宾果线',s2_c2b:'完成一行、一列或对角线可获得额外奖励积分。',
+  s2_c3t:'最高分获胜',s2_c3b:'结束时总积分最多的团队赢得冠军。',
+  s2_rule:'⚠️ 安全 &gt; 速度 — 永远如此',s2_rule_sub:'规则#1：没有任何任务值得冒险受伤。',
+  s3_title:'<span class="gold">宾果</span>游戏规则',s3_sub:'点击任意格子标记完成 — 规察你的积分和连线增长',
+  s3_score_hdr:'📊 实时积分板',s3_tasks_lbl:'✅ 已完成任务',s3_tpts_lbl:'🎯 任务积分',
+  s3_lines_lbl:'⭐ 已达成连线',s3_bonus_lbl:'🎁 连线奖励',s3_full_lbl:'💎 满格奖励',
+  s3_total_lbl:'总积分',s3_line_tracker:'已完成宾果线（每条100分）',
+  s3_fullcard:'🏆 满格！+500奖励分',s3_reset:'↺ 重置棋盘',
+  s4_title:'仔细阅读<span class="gold">线索</span>',s4_sub:'每条线索都很重要 — 先理解再行动。',
+  s4_col1_title:'📋 任务要求',s4_col2_title:'🧠 创意证明方式',
+  s4_i1:'需要<strong>整队参与</strong> — 所有人出现在照片中',
+  s4_i2:'注明<strong>最少人数</strong> — 严格遵守',
+  s4_i3:'仅需<strong>1名代表</strong>',
+  s4_i4:'未注明时 — 可自由分工合作',
+  s4_i5:'使用视频通话截图',s4_i6:'使用反射（玻璃/镜子）',
+  s4_i7:'创意站位有效',s4_i8:'团队道具或标识',s4_i9:'提前规划并重新集合',
+  s4_rule:'所有成员必须在场 — 如何实现是你们的策略。',
+  s5_title:'创意<span class="gold">赢得</span>积分',
+  s5_a_title:'✅ 允许',s5_a1:'创意姿势',s5_a2:'表演场景',s5_a3:'故事性照片',s5_a4:'艺术构图',
+  s5_f_title:'🚫 不允许',s5_f1:'阻塞通道',s5_f2:'打扰公众',s5_f3:'进入禁区',s5_f4:'攀爬不安全结构',
+  s5_rule:'🌟 黄金法则：保持创意但不造成干扰',
+  s6_title:'🚗 驾驶<span class="gold">安全</span>',
+  s6_a_title:'✅ 司机必须',s6_a1:'遵守所有交通法规',s6_a2:'不超速',s6_a3:'不与其他队伍赛车',s6_a4:'不走危险捷径',
+  s6_f_title:'🚫 严格禁止',s6_f1:'开车时使用手机',s6_f2:'双排停车',s6_f3:'违规U转',s6_f4:'危险停车',
+  s6_rule:'🛑 这不是路上的赛车',s6_rule_sub:'不安全行为可能会受到惩罚。',
+  s7_title:'尊重<span class="gold">公共</span>空间',
+  s7_a_title:'✅ 应该',s7_a1:'合法停车',s7_a2:'使用正规停车场',s7_a3:'尊重店主',s7_a4:'保持通道畅通',
+  s7_f_title:'🚫 不得',s7_f1:'乱扔垃圾',s7_f2:'移动公共财物',s7_f3:'未经许可触摸店铺物品',s7_f4:'打扰当地居民',
+  s7_c1:'贵公司',s7_c2:'主办方',s7_c3:'您自己',s7_note:'您代表三者。保持专业。',
+  s8_title:'⚠️ 安全<span class="gold">意证</span>',
+  s8_c1t:'过马路',s8_c1b:'始终使用人行横道。注意交通。',
+  s8_c2t:'中暑',s8_c2b:'保持补水。在阴凉处休息。若感不适请报告。',
+  s8_c3t:'脱水',s8_c3b:'全天持续饮水。',
+  s8_c4t:'施工区域',s8_c4b:'避开所有施工区。不得进入。',
+  s8_c5t:'湿滑地面',s8_c5b:'在潮湿或不平整的地面上小心行走。',
+  s8_c6t:'帮助队友',s8_c6b:'互相关照。不让任何人落后。',
+  s8_rule:'思维快速 — 行动缓慢',
+  s9_title:'🌐 语言<span class="gold">支持</span>',s9_sub:'所有线索提供3种语言版本',
+  s9_bm:'马来语',s9_zh:'中文',s9_zh_sub:'中文',
+  s9_tip:'💡 在系统顶部切换语言',s9_tip2:'选择您的团队最容易理解的语言。',
+  s10_title:'👕 穿着<span class="gold">建议</span>',
+  s10_a_title:'✅ 推荐',s10_a1:'舒适的服装',s10_a2:'运动鞋或步行鞋',s10_a3:'轻便透气的衣物',
+  s10_f_title:'🚫 避免',s10_f1:'拖鞋或凉鞋',s10_f2:'正式皮鞋',s10_f3:'重型包袋',s10_f4:'紧身衣物',
+  s10_c1t:'帽子',s10_c1b:'防止太阳直晒',s10_c2t:'太阳镜',s10_c2b:'户外眼部保护',s10_c3t:'防晒霜',s10_c3b:'出发前涂抹',
+  s11_title:'🎒 携带<span class="gold">物品</span>',
+  s11_c1t:'充满电的手机',s11_c1b:'充满电。需要有网络的团队手机。',
+  s11_c2t:'充电宝',s11_c2b:'全天保持手机电量充足。',
+  s11_c3t:'水瓶',s11_c3b:'补充水分。户外全天活动必备。',
+  s11_c4t:'少量现金',s11_c4b:'用于意外需求、停车或小额购买。',
+  s11_c5t:'雨伞',s11_c5b:'可选 — 天气变化时有用。',
+  s11_c6t:'零食',s11_c6b:'可选。在活动之间保持体力。',
+  s12_title:'💬 WhatsApp<span class="gold">群组</span>设置',s12_sub:'每队必须在开始前创建WhatsApp群组',
+  s12_c1_title:'📲 群组成员',s12_i1:'所有队员',s12_i2:'协调员联系方式',s12_i3:'紧急联系号码',
+  s12_c2_title:'🎯 群组用途',s12_i4:'团队协调',s12_i5:'紧急通讯',s12_i6:'任务澄清',s12_i7:'提交备份',
+  s12_rule:'⏰ 在寻宝开始前完成此操作',
+  s13_title:'🆘 紧急<span class="gold">联系</span>',
+  s13_bryan_role:'游戏主持',s13_seb_role:'安全官员',
+  s13_call:'📞 致电',s13_wa:'💬 WhatsApp',s13_call2:'📞 致电',
+  s13_c1:'受伤',s13_c2:'成员走失',s13_c3:'车辆问题',s13_c4:'中暑',
+  s13_rule:'尽早报告 — 不要等到最后',
+  s14_title:'⚖️ 公平<span class="gold">游戏</span>',
+  s14_f_title:'🚫 不得',s14_f1:'以任何形式作弊',s14_f2:'提交虚假或伪造证据',s14_f3:'使用旧照片或回收照片',s14_f4:'抄袭其他队伍的提交内容',
+  s14_w_title:'⚠️ 违规可能导致',s14_w1:'扣分',s14_w2:'任务取消资格',s14_w3:'全队处罚',
+  s14_rule:'🏅 诚信比赢得比赛更重要',
+  s15_title:'⏱️ 时间<span class="gold">管理</span>',
+  s15_a_title:'✅ 聪明的队伍',s15_a1:'先规划路线',s15_a2:'明确分配角色',s15_a3:'优先完成高分任务',s15_a4:'持续追踪时间',
+  s15_f_title:'❌ 失败的队伍',s15_f1:'随意乱跑',s15_f2:'没有内部沟通',s15_f3:'没有计划或策略',s15_f4:'把时间浪费在低分任务上',
+  s15_rule:'🧠 策略比速度更能赢得比赛',
+  s16_title:'🏛️ 尊重<span class="gold">文化遗产</span>景点',s16_sub:'这些是真实的历史地点。请像对待博物馆一样对待它们。',
+  s16_r1:'切勿<strong>攀爬</strong>绪念碑或遗产建筑 — 即使是为了拍照',
+  s16_r2:'切勿<strong>坐在</strong>或倚靠遗产建筑',
+  s16_r3:'切勿<strong>触摸</strong>易碎物品或文物',
+  s16_r4:'切勿<strong>损坏</strong>、涂写或破坏壁画和墙壁',
+  s16_rule:"这些地方是马来西亚历史的一部分。",
+  s17_title:'📤 提交<span class="gold">规则</span>',
+  s17_r1:'提交<strong>正确的照片</strong> — 清晰、可读、与任务匹配',
+  s17_r2:'照片必须清楚<strong>证明任务完成</strong>',
+  s17_r3:'确保您完成的是<strong>正确的任务</strong>格子',
+  s17_r4:'包含线索要求的<strong>正确队员</strong>',
+  s17_r5:'<strong>迟交可能被扣分</strong> — 请准时提交',
+  s17_r6:'仅<strong>队长提交</strong> — 每项任务一次提交',
+  s18_title:'⚠️ 处罚<span class="gold">制度</span>',s18_th1:'违规行为',s18_th2:'处罚',
+  s18_v1:'🚨 不安全行为',s18_p1:'-50分',s18_v2:'⏰ 迟交',s18_p2:'-20分',
+  s18_v3:'🅿️ 违规停车',s18_p3:'-50分',s18_v4:'❌ 虚假提交',s18_p4:'取消资格',
+  s18_rule:'不要让捷径毁了您的比赛',
+  s19_title:'🌧️ 天气<span class="gold">应对</span>',
+  s19_r_title:'🌧️ 若遇大雨',s19_r1:'立即暂停活动',s19_r2:'转移到安全庇护所',s19_r3:'等待主办方指示',
+  s19_h_title:'☀️ 若遇酷热',s19_h1:'立即补充水分',s19_h2:'在阴凉处休息',s19_h3:'若感不适请告知协调员',
+  s19_rule:'🗓️ 主办方可能会调整游戏时间以确保安全',
+  s20_title:'🆘 发生<span class="gold">问题</span>时',
+  s20_c1t:'团队迷路',s20_c1b:'立即通过WhatsApp或电话联系协调员。',
+  s20_c2t:'手机没电',s20_c2b:'立即返回最近的检查点。',
+  s20_c3t:'车辆故障',s20_c3b:'立即通知主办方。保持安全，远离道路。',
+  s20_rule:'🔕 不要在未通知的情况下消失',
+  s21_title:'🏛️ 评分<span class="gold">争议</span>',s21_rule:'游戏主持的决定为最终决定',
+  s21_para:'尊重决定，保持比赛顺畅进行，对所有队伍都公平。',
+  s22_title:'🤝 行为<span class="gold">准则</span>',s22_sub:'这是一项企业活动。请保持相应行为。',
+  s22_c1t:'尊重',s22_c1b:'对当地居民、队友、遗产景点和主办方。',
+  s22_c2t:'负责',s22_c2b:'对自己的行为负责。为团队负责。',
+  s22_c3t:'安全',s22_c3b:'任何时候都安全第一。没有例外。',
+  s22_c4t:'专业',s22_c4b:'您代表贵公司。保持专业行为。',
+  s23_title:'今日<span class="gold">行程</span>',s23_sub:'简单。清晰。有条理。',
+  s23_f1:'说明会',s23_f2:'寻宝',s23_f3:'提交',s23_f4:'午餐',s23_f5:'室内活动',s23_f6:'颁奖',
+  s24_title:'最重要的<span class="gold">规则</span>',
+  s24_p1:'🛡️ 安全',s24_p2:'🏅 声誉',s24_p3:'🤝 团队合作',s24_p4:'🏆 获胜',
+  s24_r1:'若不安全 — 停下',s24_r2:'若不确定 — 询问',s24_r3:'若疲惫 — 休息',
+  s24_para:'如果有人受伤，赢得比赛毫无意义。',
+  s25_title:'<span class="gold">今日目标</span>',
+  s25_c1:'享受乐趣',s25_c2:'团队合作',s25_c3:'了解巴生',s25_c4:'安全返回',
+  s25_rule:'这就是成功的活动。',s25_sub:'祝好运，保持安全，享受巴生文化遗产宾果寻宝！🏆'
 }};
 
 let currentLang = 'en';
@@ -1151,13 +1151,13 @@ function setLang(lang) {
   }, 150);
 }
 
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 //  BINGO ENGINE
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 const CELLS=[
   {name:'Heritage Art',pts:30},{name:'Old Temple',pts:20},{name:'Street Mural',pts:40},{name:'Old Bridge',pts:30},{name:'Clock Tower',pts:20},
   {name:'Night Market',pts:30},{name:'City Gate',pts:20},{name:'River View',pts:50},{name:'Flag Pole',pts:30},{name:'Antique Shop',pts:20},
-  {name:'Heritage Lane',pts:20},{name:'Old Well',pts:30},{name:'â FREE',pts:50,free:true},{name:'Stone Arch',pts:30},{name:'Rain Tree',pts:20},
+  {name:'Heritage Lane',pts:20},{name:'Old Well',pts:30},{name:'★ FREE',pts:50,free:true},{name:'Stone Arch',pts:30},{name:'Rain Tree',pts:20},
   {name:'Royal Tomb',pts:30},{name:'City Wall',pts:20},{name:'Grand Mosque',pts:40},{name:'Town Hall',pts:30},{name:'Rail Station',pts:20},
   {name:'Post Office',pts:20},{name:'Heritage Plaque',pts:30},{name:'Stone Column',pts:40},{name:'Old Fountain',pts:30},{name:'Heritage Steps',pts:20}
 ];
@@ -1166,7 +1166,7 @@ const LINES=[
   [0,5,10,15,20],[1,6,11,16,21],[2,7,12,17,22],[3,8,13,18,23],[4,9,14,19,24],
   [0,6,12,18,24],[4,8,12,16,20]
 ];
-const LINE_LABELS=['Row 1','Row 2','Row 3','Row 4','Row 5','Col 1','Col 2','Col 3','Col 4','Col 5','Diagâ','Diagâ'];
+const LINE_LABELS=['Row 1','Row 2','Row 3','Row 4','Row 5','Col 1','Col 2','Col 3','Col 4','Col 5','Diag↘','Diag↙'];
 
 let marked=new Set([12]);
 let completedLines=new Set();
@@ -1180,7 +1180,7 @@ function buildBingo(){
     el.className='bc'+(c.free?' free marked':'');
     el.id='bc-'+i; el.onclick=()=>toggleCell(i);
     if(c.free){
-      el.innerHTML=`<span class="bc-star">â­</span><div class="bc-name">FREE</div><div class="bc-pts">+${c.pts}</div>`;
+      el.innerHTML=`<span class="bc-star">⭐</span><div class="bc-name">FREE</div><div class="bc-pts">+${c.pts}</div>`;
     } else {
       el.innerHTML=`<div class="bc-name">${c.name}</div><div class="bc-pts">+${c.pts}pts</div><div class="bc-x"><svg viewBox="0 0 44 44"><line x1="8" y1="8" x2="36" y2="36"/><line x1="36" y1="8" x2="8" y2="36"/></svg></div>`;
     }
@@ -1189,7 +1189,7 @@ function buildBingo(){
   LINES.forEach((_,i)=>{
     const d=document.createElement('div');
     d.className='line-dot'; d.id='ldot-'+i;
-    d.textContent=i<5?'R'+(i+1):i<10?'C'+(i-4):(i===10?'â':'â');
+    d.textContent=i<5?'R'+(i+1):i<10?'C'+(i-4):(i===10?'↘':'↙');
     dotRow.appendChild(d);
   });
   updateScore();
@@ -1260,8 +1260,8 @@ let toastTimer=null;
 function showToast(lineIdx){
   const toast=document.getElementById('bingo-toast');
   const count=completedLines.size;
-  document.getElementById('bingo-toast-sub').textContent=`${LINE_LABELS[lineIdx]} Complete! â Line #${count} of 12`;
-  document.getElementById('bingo-toast-pts').textContent=`+100 pts  Â·  ${count} Line${count>1?'s':''} Â·  Bonus: ${count*100} pts`;
+  document.getElementById('bingo-toast-sub').textContent=`${LINE_LABELS[lineIdx]} Complete! — Line #${count} of 12`;
+  document.getElementById('bingo-toast-pts').textContent=`+100 pts  ·  ${count} Line${count>1?'s':''} ·  Bonus: ${count*100} pts`;
   toast.classList.add('show'); if(toastTimer) clearTimeout(toastTimer);
   toastTimer=setTimeout(()=>toast.classList.remove('show'),2800);
 }
@@ -1276,9 +1276,9 @@ function resetBingo(){
   updateScore();
 }
 
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 //  SLIDE ENGINE
-// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// ══════════════════════════════════════════════════════════════════
 let current=0; const total=26; let isAnimating=false; let touchStartX=0;
 
 const dotsEl=document.getElementById('nav-dots');
